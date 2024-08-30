@@ -122,6 +122,9 @@ section, body, html {
 .presentation button:hover {
   filter: brightness(1.1);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.7);
+  color: #99E2D0;
+  transform: scale(2) translate(0, -50px);
+  transition: transform;
 }
 
 .fonctionnement {
@@ -161,6 +164,8 @@ section, body, html {
 .fonctionnement__choix:hover {
   filter: brightness(1.1);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.7);
+  transform: scale(1.1);
+  transition: transform;
 }
 .fonctionnement__choix i {
   font-size: 30px;
@@ -249,6 +254,9 @@ section, body, html {
   width: 80px;
 }
 
+.coeur {
+  font-size: 22px;
+}
 .coeur i {
   position: absolute;
   right: 10px;
