@@ -1,0 +1,65 @@
+/*****************media query ordinateur************************************/
+@media (min-width: 1024px) {
+  .presentation {
+    margin: 30px 0;
+    gap: 25px;
+
+    & br {
+      display: none;
+    }
+  }
+
+  .fonctionnement {
+    padding: 50px 180px;
+    margin-bottom: 0;
+
+    &__content {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__choix {
+      width: 322px;
+    }
+  }
+
+  .restaurant {
+    gap: 28px;
+    padding: 30px 180px;
+
+    &__content {
+      display: grid;
+      grid-template-rows: 251px 251px;
+      grid-template-columns: 446px 446px;
+      gap: 50px 100px;
+
+    }
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 30px 25px;
+
+
+    & h1 {
+      margin-left: 23px;
+    }
+
+    &__contenu {
+      display: flex;
+      flex-direction: row;
+
+      & .mention-legale {
+        margin-left: 16px;
+      }
+
+
+      &--info {
+        display: flex;
+        flex-direction: row;
+
+      }
+    }
+  }
+}

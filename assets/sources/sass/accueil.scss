@@ -1,0 +1,235 @@
+@import "variables";
+@import "global";
+/*creation du loader*/
+.loader {
+  background-color: rgb(249, 241, 249);
+  opacity: 0.9;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  animation: disapper 200ms 3s forwards;
+  transform-origin: top;
+
+  &__animation {
+
+    border-top: 10px solid $couleur-primaire;
+    border-bottom: 10px solid $couleur-primaire;
+    border-right: 10px solid $couleur-secondaire;
+    border-left: 10px solid $couleur-secondaire;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 1s linear infinite;
+    /*placement de l'animation au millieux de la page*/
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+}
+
+/*animation du loader*/
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes disapper {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 30px 0 60px 0;
+
+  &__titre {
+    font-size: $fs-h1;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  &__prg {
+    font-size: 18px;
+    font-weight: 300;
+    color: $couleur-grey;
+    text-align: center;
+  }
+}
+
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 26px;
+  margin-bottom: 68px;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 0 20px 0 32px;
+  }
+
+  &__titre {
+    font-size: 24px;
+
+  }
+
+  &__choix {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    background-color: #F6F6F6;
+    border-radius: 25px;
+    box-shadow: $box-shadow;
+    width: 100%;
+    height: 72px;
+    cursor: pointer;
+
+    &:hover {
+      filter: brightness(1.10);
+      box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.70);
+      transform: scale(1.10);
+      transition: transform;
+
+
+    }
+  }
+
+  &__choix i {
+    font-size: 30px;
+
+  }
+
+  &__choix p {
+    margin-left: 10px;
+    font-size: 18px;
+  }
+
+  & span {
+    border: none;
+    text-align: center;
+    background-color: $couleur-primaire;
+    width: 30px;
+    border-radius: 30px;
+    padding: 5px;
+    color: white;
+    position: relative;
+    right: 10px;
+  }
+
+  & .fa-mobile-screen-button, .fa-list-ul {
+    color: #7E7E7E;
+  }
+
+  & .fa-store {
+    color: $couleur-primaire;
+  }
+}
+
+.restaurant {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #F6F6F6;
+  padding: 66px 18px;
+  gap: 15px;
+  width: 100%;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 16px;
+
+
+    & a {
+      width: 100%;
+
+    }
+
+  }
+
+
+  &__content--card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 7px;
+    border: none;
+    background-color: white;
+    border-radius: 20px;
+    width: 100%;
+    height: 251px;
+    position: relative;
+
+
+  }
+
+  &__content--card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+  }
+
+
+  &__content--card .container {
+    font-size: 17px;
+    margin: 0 10px 0 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+
+  .nouveau::before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    content: 'Nouveau';
+    background: #99E2D0;
+    color: #008766;
+    height: 29px;
+    width: 80px;
+
+
+  }
+
+}
+
+@import "responsive";
