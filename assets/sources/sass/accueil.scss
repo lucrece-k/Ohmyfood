@@ -54,6 +54,28 @@
   }
 }
 
+.localisation {
+  background-color: $couleur-localisation;
+  box-shadow: $box-shadow;
+  width: 100%;
+  
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+    padding: 10px;
+  }
+
+  & input{
+    border: none;
+    background-color: $couleur-localisation;
+    font-size: 17px; 
+    width: 112px;
+  }
+
+}
 
 .presentation {
   display: flex;
@@ -117,8 +139,6 @@
     &:hover {
       filter: brightness(1.10);
       box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.70);
-      transform: scale(1.10);
-      transition: transform;
 
 
     }

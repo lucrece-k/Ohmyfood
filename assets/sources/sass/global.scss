@@ -29,36 +29,23 @@ button {
   &:hover {
     filter: brightness(1.10);
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.70);
-    color: #99E2D0;
-    transform: scale(2) translate(0, -50px);
-    transition: transform 300ms ease-in;
+    
   }
 }
 
 .logo-header {
   text-align: center;
-  padding-top: 14px;
-  padding-bottom: 13px;
+  padding: 14px 0 13px 0;
   margin-bottom: 10px;
   box-shadow: $box-shadow;
-
+  
+     & img{
+      width: 162px;
+      height: 44px;}
+       
 }
 
-.localisation {
-  background-color: $couleur-localisation;
-  box-shadow: $box-shadow;
-  width: 100%;
 
-  &__content {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 17px;
-    font-size: 17px;
-    padding: 10px;
-  }
-}
 
 .coeur {
   font-size: 22px;

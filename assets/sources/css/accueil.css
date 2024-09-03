@@ -29,32 +29,17 @@ button {
 button:hover {
   filter: brightness(1.1);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.7);
-  color: #99E2D0;
-  transform: scale(2) translate(0, -50px);
-  transition: transform 300ms ease-in;
 }
 
 .logo-header {
   text-align: center;
-  padding-top: 14px;
-  padding-bottom: 13px;
+  padding: 14px 0 13px 0;
   margin-bottom: 10px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 }
-
-.localisation {
-  background-color: #EAEAEA;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  width: 100%;
-}
-.localisation__content {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 17px;
-  font-size: 17px;
-  padding: 10px;
+.logo-header img {
+  width: 162px;
+  height: 44px;
 }
 
 .coeur {
@@ -153,6 +138,26 @@ button:hover {
     transform: scale(0);
   }
 }
+.localisation {
+  background-color: #EAEAEA;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  width: 100%;
+}
+.localisation__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+  padding: 10px;
+}
+.localisation input {
+  border: none;
+  background-color: #EAEAEA;
+  font-size: 17px;
+  width: 112px;
+}
+
 .presentation {
   display: flex;
   flex-direction: column;
@@ -210,8 +215,6 @@ button:hover {
 .fonctionnement__choix:hover {
   filter: brightness(1.1);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.7);
-  transform: scale(1.1);
-  transition: transform;
 }
 .fonctionnement__choix i {
   font-size: 30px;
