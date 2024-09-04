@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -29,9 +30,6 @@ button {
 button:hover {
   filter: brightness(1.1);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.7);
-  color: #99E2D0;
-  transform: scale(2) translate(0, -50px);
-  transition: transform 300ms ease-in;
 }
 
 .logo-header {
@@ -43,21 +41,6 @@ button:hover {
 .logo-header img {
   width: 162px;
   height: 44px;
-}
-
-.localisation {
-  background-color: #EAEAEA;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  width: 100%;
-}
-.localisation__content {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 17px;
-  font-size: 17px;
-  padding: 10px;
 }
 
 .coeur {
@@ -108,6 +91,10 @@ button:hover {
   gap: 11px;
 }
 
+body {
+  background-color: #F6F6F6;
+}
+
 .logo-header {
   padding-left: 17px;
   box-shadow: none;
@@ -130,22 +117,125 @@ button:hover {
 .photo-restaurant {
   width: 100%;
   height: 275px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .container {
   background-color: #F6F6F6;
-  border-radius: 30px 30px 0 0;
+  border-radius: 40px 40px 0 0;
   position: relative;
-  bottom: 50px;
+  bottom: 37px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 .container h1 {
   font-family: "Shrikhand";
+  font-size: 28px;
 }
 .container__nom-restaurants {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 32px 17px 0 17px;
+}
+.container__nom-restaurants .coeur-1, .container__nom-restaurants .coeur-2 {
+  margin-right: 24px;
+  font-size: 22px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0 13px;
+  gap: 12px;
+}
+.menu__plats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  border: none;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+}
+.menu__plats:active .coche {
+  animation: translate(-50px, 0) 3s forwards;
+}
+.menu__plats--nom :first-child {
+  gap: 5px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.menu__plats--nom {
+  font-size: 15px;
+}
+.menu h2 {
+  font-size: 16px;
+  font-weight: 300;
+  border-bottom: 3px solid #99E2D0;
+  width: 40px;
+}
+
+@keyframes translate {
+  from {
+    transform: translate(0, o);
+  }
+  to {
+    transform: translate(-50, 0);
+  }
+}
+.entrées {
+  animation: appear 5s forwards;
+}
+
+.plats {
+  animation: appear 5s 2s forwards;
+}
+
+.desserts {
+  animation: appear 5s 4s forwards;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.coche::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  background-color: green;
+  width: 50px;
+  height: 15px;
+  top: 0px;
+  right: 17px;
+}
+.coche::before:active {
+  transform: translate(-100px, 0);
+}
+
+.button-commander {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+footer {
+  margin-top: 0;
 }
 
 /*****************media query ordinateur************************************/
