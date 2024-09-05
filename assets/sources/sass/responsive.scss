@@ -35,6 +35,32 @@
 
     }
   }
+  body{
+    background-color: white;
+  }
+
+  .header{
+    justify-content: flex-start;
+    gap: 572px;
+  }
+
+  .container{
+    width: 1055px;
+    margin: auto;
+
+       &__nom-restaurants{
+        justify-content: center;
+        gap: 24px;
+       }
+  }
+
+  .menu{
+    padding: 0 210px;
+  }
+
+  .button-commander{
+    margin-bottom: 40px;
+  }
 
   .footer {
     display: flex;

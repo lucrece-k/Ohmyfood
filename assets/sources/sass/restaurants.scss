@@ -1,9 +1,7 @@
 @import "variables";
 @import "global";
 
-body{
-    background-color: $background-restaurants;
-}
+
 .logo-header{
     padding-left: 17px;
     box-shadow: none;
@@ -169,7 +167,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 6px;
+    margin-bottom: 40px;
     
 }
 
@@ -177,4 +175,4 @@ footer{
     margin-top: 0;
 }
 
-@import "responsive-restaurants";
+@import "responsive";

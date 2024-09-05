@@ -90,10 +90,6 @@ button:hover {
   gap: 11px;
 }
 
-body {
-  background-color: #F6F6F6;
-}
-
 .logo-header {
   padding-left: 17px;
   box-shadow: none;
@@ -232,11 +228,83 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 6px;
+  margin-bottom: 40px;
 }
 
 footer {
   margin-top: 0;
+}
+
+/*****************media query ordinateur************************************/
+@media (min-width: 1024px) {
+  .presentation {
+    margin: 30px 0;
+    gap: 25px;
+  }
+  .presentation br {
+    display: none;
+  }
+  .fonctionnement {
+    padding: 50px 180px;
+    margin-bottom: 0;
+  }
+  .fonctionnement__content {
+    display: flex;
+    flex-direction: row;
+  }
+  .fonctionnement__choix {
+    width: 322px;
+  }
+  .restaurant {
+    gap: 28px;
+    padding: 30px 180px;
+  }
+  .restaurant__content {
+    display: grid;
+    grid-template-rows: 251px 251px;
+    grid-template-columns: 446px 446px;
+    gap: 50px 100px;
+  }
+  body {
+    background-color: white;
+  }
+  .header {
+    justify-content: flex-start;
+    gap: 572px;
+  }
+  .container {
+    width: 1055px;
+    margin: auto;
+  }
+  .container__nom-restaurants {
+    justify-content: center;
+    gap: 24px;
+  }
+  .menu {
+    padding: 0 210px;
+  }
+  .button-commander {
+    margin-bottom: 40px;
+  }
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 30px 25px;
+  }
+  .footer h1 {
+    margin-left: 23px;
+  }
+  .footer__contenu {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer__contenu .mention-legale {
+    margin-left: 16px;
+  }
+  .footer__contenu--info {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 /*# sourceMappingURL=restaurants.css.map */
