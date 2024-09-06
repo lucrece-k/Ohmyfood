@@ -3,7 +3,6 @@
 
 
 .logo-header{
-    padding-left: 17px;
     box-shadow: none;
 
        & .header{
@@ -12,6 +11,7 @@
          justify-content: flex-start;
          align-items: center;
          gap: 130px;
+         padding-left: 17px;
     
           &__fleche{
           font-size: 30px;
@@ -25,7 +25,7 @@
 }
 }
 
-.photo-restaurant{
+.photo-restaurant img{
     width: 100%;
     height: 275px;
     object-fit: cover;
@@ -35,10 +35,14 @@
     background-color: $background-restaurants;
     border-radius: 40px 40px 0 0;
     position: relative;
-    bottom: 37px;
+    // bottom: 37px;
     display: flex;
     flex-direction: column;
     gap: 40px;
+    // border-radius: 40px 40px 0 0;
+    // padding: 20px;
+    margin-top: -60PX;
+    // margin: auto;
     
 
     & h1{
@@ -46,20 +50,35 @@
         font-size: 28px;
     }
 
-    &__nom-restaurants{
+    & .nom-restaurants{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        
+        align-items: center;
         padding: 32px 17px 0 17px;
+        position: relative;
         
        
         & .coeur-1, .coeur-2{
-            margin-right: 24px;
             font-size: 22px;
+            bottom: 10px;
         }
 
     }
+}
+
+ h2 {
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0 13px;
+    border-bottom: 3px solid #99E2D0;
+    width: 40px;
+
+}
+.ctn-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .menu{
@@ -85,12 +104,6 @@
         position: relative;
         cursor: pointer;
 
-        &:active .coche{
-            opacity: 0;
-        } 
-
-       
-        
          &--nom :first-child{
             gap: 5px;
             font-size:18px;
@@ -103,13 +116,6 @@
 
     }
 
-    & h2{
-        font-size: 16px;
-        font-weight: 300;
-        border-bottom: 3px solid #99E2D0;
-        width: 40px;
-
-    }
 }
 
 

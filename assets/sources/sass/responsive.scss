@@ -1,3 +1,12 @@
+@media(min-widht:767){
+  .container{
+    margin-top: -110px;
+    padding: 30px;
+
+  }
+}
+
+
 /*****************media query ordinateur************************************/
 @media (min-width: 1024px) {
   .presentation {
@@ -35,27 +44,39 @@
 
     }
   }
-  body{
-    background-color: white;
-  }
+  
 
-  .header{
+  .logo-header .header{
     justify-content: flex-start;
     gap: 572px;
   }
 
   .container{
-    width: 1055px;
-    margin: auto;
+    position: relative;
+    margin-top: -60px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    
 
-       &__nom-restaurants{
+       & .nom-restaurants{
         justify-content: center;
-        gap: 24px;
+
+        & .coeur-1, .coeur-2{
+          margin-right: 348px;
+          font-size: 22px;
+          
+      }
        }
   }
 
+  h2{
+    margin: 0 223px;
+  }
+  
   .menu{
     padding: 0 210px;
+    width: 100%;
   }
 
   .button-commander{

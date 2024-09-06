@@ -91,7 +91,6 @@ button:hover {
 }
 
 .logo-header {
-  padding-left: 17px;
   box-shadow: none;
 }
 .logo-header .header {
@@ -100,6 +99,7 @@ button:hover {
   justify-content: flex-start;
   align-items: center;
   gap: 130px;
+  padding-left: 17px;
 }
 .logo-header .header__fleche {
   font-size: 30px;
@@ -109,7 +109,7 @@ button:hover {
   padding: 0;
 }
 
-.photo-restaurant {
+.photo-restaurant img {
   width: 100%;
   height: 275px;
   object-fit: cover;
@@ -119,24 +119,40 @@ button:hover {
   background-color: #F6F6F6;
   border-radius: 40px 40px 0 0;
   position: relative;
-  bottom: 37px;
   display: flex;
   flex-direction: column;
   gap: 40px;
+  margin-top: -60PX;
 }
 .container h1 {
   font-family: "Shrikhand";
   font-size: 28px;
 }
-.container__nom-restaurants {
+.container .nom-restaurants {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   padding: 32px 17px 0 17px;
+  position: relative;
 }
-.container__nom-restaurants .coeur-1, .container__nom-restaurants .coeur-2 {
-  margin-right: 24px;
+.container .nom-restaurants .coeur-1, .container .nom-restaurants .coeur-2 {
   font-size: 22px;
+  bottom: 10px;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0 13px;
+  border-bottom: 3px solid #99E2D0;
+  width: 40px;
+}
+
+.ctn-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .menu {
@@ -161,9 +177,6 @@ button:hover {
   position: relative;
   cursor: pointer;
 }
-.menu__plats:active .coche {
-  opacity: 0;
-}
 .menu__plats--nom :first-child {
   gap: 5px;
   font-size: 18px;
@@ -171,12 +184,6 @@ button:hover {
 }
 .menu__plats--nom {
   font-size: 15px;
-}
-.menu h2 {
-  font-size: 16px;
-  font-weight: 300;
-  border-bottom: 3px solid #99E2D0;
-  width: 40px;
 }
 
 .entrées {
@@ -235,6 +242,12 @@ footer {
   margin-top: 0;
 }
 
+@media (min-widht: 767) {
+  .container {
+    margin-top: -110px;
+    padding: 30px;
+  }
+}
 /*****************media query ordinateur************************************/
 @media (min-width: 1024px) {
   .presentation {
@@ -265,23 +278,30 @@ footer {
     grid-template-columns: 446px 446px;
     gap: 50px 100px;
   }
-  body {
-    background-color: white;
-  }
-  .header {
+  .logo-header .header {
     justify-content: flex-start;
     gap: 572px;
   }
   .container {
-    width: 1055px;
-    margin: auto;
+    position: relative;
+    margin-top: -60px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
-  .container__nom-restaurants {
+  .container .nom-restaurants {
     justify-content: center;
-    gap: 24px;
+  }
+  .container .nom-restaurants .coeur-1, .container .nom-restaurants .coeur-2 {
+    margin-right: 348px;
+    font-size: 22px;
+  }
+  h2 {
+    margin: 0 223px;
   }
   .menu {
     padding: 0 210px;
+    width: 100%;
   }
   .button-commander {
     margin-bottom: 40px;
