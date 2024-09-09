@@ -11,7 +11,9 @@ a {
   text-decoration: none;
 }
 
-section, body, html {
+section,
+body,
+html {
   width: 100%;
 }
 
@@ -48,7 +50,7 @@ button:hover {
 }
 .coeur i {
   position: absolute;
-  right: 10px;
+  right: 33px;
 }
 .coeur .coeur-2 {
   visibility: hidden;
@@ -58,7 +60,8 @@ button:hover {
   background-clip: text;
   visibility: visible;
   color: transparent;
-  animation-fill-mode: forwards;
+  transform: scale(1.2);
+  transition: scale 0ms ease-in;
 }
 
 .footer {
@@ -122,7 +125,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin-top: -60PX;
+  margin-top: -60px;
 }
 .container h1 {
   font-family: "Shrikhand";
@@ -136,7 +139,8 @@ button:hover {
   padding: 32px 17px 0 17px;
   position: relative;
 }
-.container .nom-restaurants .coeur-1, .container .nom-restaurants .coeur-2 {
+.container .nom-restaurants .coeur-1,
+.container .nom-restaurants .coeur-2 {
   font-size: 22px;
   bottom: 10px;
 }
@@ -145,7 +149,7 @@ h2 {
   font-size: 16px;
   font-weight: 300;
   margin: 0 13px;
-  border-bottom: 3px solid #99E2D0;
+  border-bottom: 3px solid #99e2d0;
   width: 40px;
 }
 
@@ -153,6 +157,9 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 40px;
+}
+.ctn-menu .ent-pls-dsrt h2 {
+  margin-bottom: 12px;
 }
 
 .menu {
@@ -168,6 +175,7 @@ h2 {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
+  gap: 30px;
   border: none;
   border-radius: 15px;
   background-color: white;
@@ -177,13 +185,62 @@ h2 {
   position: relative;
   cursor: pointer;
 }
-.menu__plats--nom :first-child {
+.menu__plats:active .check {
+  transform: translate(-45px, 0);
+  transition: transform 200ms ease-in;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+.menu--nom :first-child {
   gap: 5px;
   font-size: 18px;
   font-weight: 500;
 }
-.menu__plats--nom {
+.menu--nom {
   font-size: 15px;
+}
+.menu .menu-prix {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 10px;
+}
+.menu .menu-et-check {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.menu .menu-et-check .check {
+  width: 0px;
+  background-color: RED;
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  position: relative;
+  right: -45px;
+  opacity: 0;
+}
+
+.menu-et-check:active .check {
+  transform: translate(-45px, 0);
+  transition: transform 100ms ease-in;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  width: 50px;
+  color: white;
+  background-color: green;
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  opacity: 1;
+}
+
+.menu__plats:active {
+  border-radius: 15px 0 0 15px;
 }
 
 .entrées {
@@ -211,26 +268,6 @@ h2 {
     transform: translate(0, 0);
   }
 }
-.coche::before {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  background-color: green;
-  width: 50px;
-  height: 15px;
-  top: 0px;
-  right: 17px;
-  transform: translate(0, 0);
-}
-
-@keyframes coche {
-  from {
-    transform: translate(0, 0);
-  }
-  to {
-    transform: translate(-100px, 0);
-  }
-}
 .button-commander {
   display: flex;
   justify-content: center;
@@ -251,7 +288,6 @@ footer {
 /*****************media query ordinateur************************************/
 @media (min-width: 1024px) {
   .presentation {
-    margin: 30px 0;
     gap: 25px;
   }
   .presentation br {
@@ -259,7 +295,6 @@ footer {
   }
   .fonctionnement {
     padding: 50px 180px;
-    margin-bottom: 0;
   }
   .fonctionnement__content {
     display: flex;
@@ -292,9 +327,36 @@ footer {
   .container .nom-restaurants {
     justify-content: center;
   }
-  .container .nom-restaurants .coeur-1, .container .nom-restaurants .coeur-2 {
-    margin-right: 348px;
+  .container .nom-restaurants .coeur-1,
+  .container .nom-restaurants .coeur-2 {
+    margin-right: 328px;
     font-size: 22px;
+  }
+  .coeur:hover .coeur-2 {
+    background-image: linear-gradient(0deg, #9356DC, #FF79DA);
+    background-clip: text;
+    visibility: visible;
+    color: transparent;
+    transform: scale(1.2);
+    transition: scale 200ms ease-in;
+  }
+  .menu-et-check:hover .check {
+    transform: translate(-45px, 0);
+    transition: transform 100ms ease-in;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    width: 50px;
+    color: white;
+    background-color: green;
+    border-radius: 0 15px 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    opacity: 1;
+  }
+  .menu__plats:hover {
+    border-radius: 15px 0 0 15px;
   }
   h2 {
     margin: 0 223px;

@@ -48,9 +48,14 @@
   .container .nom-restaurants {
     justify-content: center;
   }
-  .container .nom-restaurants .coeur-1, .container .nom-restaurants .coeur-2 {
+  .container .nom-restaurants .coeur-1,
+  .container .nom-restaurants .coeur-2 {
     margin-right: 348px;
     font-size: 22px;
+  }
+  .menu__plats:hover .check {
+    transform: translate(-40px, 0);
+    transition: transform 200ms ease-in-out;
   }
   h2 {
     margin: 0 223px;
