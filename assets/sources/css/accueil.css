@@ -248,7 +248,7 @@ button:hover {
   color: #9356DC;
 }
 
-.restaurant {
+.restaurant-accueil {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -258,7 +258,7 @@ button:hover {
   gap: 15px;
   width: 100%;
 }
-.restaurant__content {
+.restaurant-accueil__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -266,10 +266,10 @@ button:hover {
   width: 100%;
   gap: 16px;
 }
-.restaurant__content a {
+.restaurant-accueil__content a {
   width: 100%;
 }
-.restaurant__content--card {
+.restaurant-accueil__content--card {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -281,23 +281,23 @@ button:hover {
   height: 251px;
   position: relative;
 }
-.restaurant__content--card .container {
+.restaurant-accueil__content--card .content {
   width: 100%;
 }
-.restaurant__content--card img {
+.restaurant-accueil__content--card img {
   width: 100%;
   height: 200px;
   border-radius: 15px 15px 0 0;
   object-fit: cover;
 }
-.restaurant__content--card .container {
+.restaurant-accueil__content--card .content {
   font-size: 17px;
   margin: 0 10px 0 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.restaurant .nouveau::before {
+.restaurant-accueil .nouveau::before {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -311,10 +311,20 @@ button:hover {
   width: 80px;
 }
 
-@media (min-widht: 767) {
+/*****************media query tablette************************************/
+@media (min-width: 768px) {
   .container {
     margin-top: -110px;
     padding: 30px;
+  }
+  .logo-header .header {
+    gap: 220px;
+  }
+  .fonctionnement {
+    padding: 48px 50px 68px 50px;
+  }
+  .restaurant-accueil {
+    padding: 54px 50px;
   }
 }
 /*****************media query ordinateur************************************/
@@ -335,19 +345,19 @@ button:hover {
   .fonctionnement__choix {
     width: 322px;
   }
-  .restaurant {
+  .restaurant-accueil {
     gap: 28px;
     padding: 30px 180px;
   }
-  .restaurant__content {
+  .restaurant-accueil__content {
     display: grid;
     grid-template-rows: 251px 251px;
-    grid-template-columns: 446px 446px;
+    grid-template-columns: 40% 40%;
     gap: 50px 100px;
   }
   .logo-header .header {
     justify-content: flex-start;
-    gap: 572px;
+    gap: 410px;
   }
   .container {
     position: relative;
@@ -361,7 +371,7 @@ button:hover {
   }
   .container .nom-restaurants .coeur-1,
   .container .nom-restaurants .coeur-2 {
-    margin-right: 348px;
+    margin-right: 308px;
     font-size: 22px;
   }
   .coeur:hover .coeur-2 {
@@ -372,9 +382,23 @@ button:hover {
     transform: scale(1.2);
     transition: scale 200ms ease-in;
   }
-  .menu__plats:hover .check {
-    transform: translate(-40px, 0);
-    transition: transform 200ms ease-in-out;
+  .menu-et-check:hover .check {
+    transform: translate(-45px, 0);
+    transition: transform 100ms ease-in;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    width: 50px;
+    color: white;
+    background-color: green;
+    border-radius: 0 15px 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    opacity: 1;
+  }
+  .menu__plats:hover {
+    border-radius: 15px 0 0 15px;
   }
   h2 {
     margin: 0 223px;

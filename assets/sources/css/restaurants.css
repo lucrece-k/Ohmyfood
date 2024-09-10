@@ -101,7 +101,7 @@ button:hover {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  gap: 130px;
+  gap: 380px;
   padding-left: 17px;
 }
 .logo-header .header__fleche {
@@ -279,10 +279,17 @@ footer {
   margin-top: 0;
 }
 
-@media (min-widht: 767) {
+/*****************media query tablette************************************/
+@media (min-width: 768px) {
   .container {
     margin-top: -110px;
     padding: 30px;
+  }
+  .fonctionnement {
+    padding: 48px 50px 68px 50px;
+  }
+  .restaurant-accueil {
+    padding: 54px 50px;
   }
 }
 /*****************media query ordinateur************************************/
@@ -303,19 +310,18 @@ footer {
   .fonctionnement__choix {
     width: 322px;
   }
-  .restaurant {
+  .restaurant-accueil {
     gap: 28px;
     padding: 30px 180px;
   }
-  .restaurant__content {
+  .restaurant-accueil__content {
     display: grid;
     grid-template-rows: 251px 251px;
-    grid-template-columns: 446px 446px;
+    grid-template-columns: 40% 40%;
     gap: 50px 100px;
   }
   .logo-header .header {
     justify-content: flex-start;
-    gap: 572px;
   }
   .container {
     position: relative;
@@ -329,7 +335,7 @@ footer {
   }
   .container .nom-restaurants .coeur-1,
   .container .nom-restaurants .coeur-2 {
-    margin-right: 328px;
+    margin-right: 308px;
     font-size: 22px;
   }
   .coeur:hover .coeur-2 {
