@@ -47,18 +47,19 @@ button {
 }
 
 .coeur {
-  font-size: 22px;
+  width: 17px;
+  height: 17px;
 
-  & i {
+  i {
     position: absolute;
     right: 33px;
   }
 
-  & .coeur-2 {
+  .coeur-2 {
     visibility: hidden;
   }
 
-  &:active .coeur-2 {
+  &:hover .coeur-2 {
     background-image: $linearGradient;
     background-clip: text;
     visibility: visible;

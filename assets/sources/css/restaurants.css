@@ -46,7 +46,8 @@ button:hover {
 }
 
 .coeur {
-  font-size: 22px;
+  width: 17px;
+  height: 17px;
 }
 .coeur i {
   position: absolute;
@@ -55,7 +56,7 @@ button:hover {
 .coeur .coeur-2 {
   visibility: hidden;
 }
-.coeur:active .coeur-2 {
+.coeur:hover .coeur-2 {
   background-image: linear-gradient(0deg, #9356DC, #FF79DA);
   background-clip: text;
   visibility: visible;
@@ -99,17 +100,20 @@ button:hover {
 .logo-header .header {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  gap: 380px;
   padding-left: 17px;
+  position: relative;
 }
-.logo-header .header__fleche {
+.logo-header .header a {
   font-size: 30px;
   color: #353535;
+  position: absolute;
+  left: 20px;
 }
 .logo-header .header img {
   padding: 0;
+  object-fit: contain;
 }
 
 .photo-restaurant img {
@@ -170,6 +174,35 @@ h2 {
   margin: 0 13px;
   gap: 12px;
 }
+.menu-et-check {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+.menu-et-check .check {
+  width: 50px;
+  height: 100%;
+  background-color: #99E2D0;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  position: absolute;
+  right: -50px;
+  opacity: 1;
+  transition: 0.1s ease-in-out;
+}
+.menu-et-check:hover .check {
+  right: 0;
+}
+.menu-et-check:hover .menu-prix {
+  transform: translateX(-50px);
+}
 .menu__plats {
   display: flex;
   flex-direction: row;
@@ -177,70 +210,25 @@ h2 {
   align-items: flex-end;
   gap: 30px;
   border: none;
-  border-radius: 15px;
   background-color: white;
-  box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
   padding: 15px;
   width: 100%;
   position: relative;
   cursor: pointer;
 }
-.menu__plats:active .check {
-  transform: translate(-45px, 0);
-  transition: transform 200ms ease-in;
-  animation-delay: 1s;
-  animation-fill-mode: forwards;
-}
 .menu--nom :first-child {
-  gap: 5px;
   font-size: 18px;
   font-weight: 500;
 }
 .menu--nom {
   font-size: 15px;
 }
-.menu .menu-prix {
+.menu-prix {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   gap: 10px;
-}
-.menu .menu-et-check {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-}
-.menu .menu-et-check .check {
-  width: 0px;
-  background-color: RED;
-  border-radius: 0 15px 15px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  position: relative;
-  right: -45px;
-  opacity: 0;
-}
-
-.menu-et-check:active .check {
-  transform: translate(-45px, 0);
-  transition: transform 100ms ease-in;
-  animation-delay: 1s;
-  animation-fill-mode: forwards;
-  width: 50px;
-  color: white;
-  background-color: green;
-  border-radius: 0 15px 15px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  opacity: 1;
-}
-
-.menu__plats:active {
-  border-radius: 15px 0 0 15px;
+  transition: 0.1s ease-in-out;
 }
 
 .entrées {
@@ -320,9 +308,6 @@ footer {
     grid-template-columns: 40% 40%;
     gap: 50px 100px;
   }
-  .logo-header .header {
-    justify-content: flex-start;
-  }
   .container {
     position: relative;
     margin-top: -60px;
@@ -345,24 +330,6 @@ footer {
     color: transparent;
     transform: scale(1.2);
     transition: scale 200ms ease-in;
-  }
-  .menu-et-check:hover .check {
-    transform: translate(-45px, 0);
-    transition: transform 100ms ease-in;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
-    width: 50px;
-    color: white;
-    background-color: green;
-    border-radius: 0 15px 15px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    opacity: 1;
-  }
-  .menu__plats:hover {
-    border-radius: 15px 0 0 15px;
   }
   h2 {
     margin: 0 223px;

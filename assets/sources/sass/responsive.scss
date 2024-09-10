@@ -48,10 +48,6 @@
     }
   }
 
-  .logo-header .header {
-    justify-content: flex-start;
-  }
-
   .container {
     position: relative;
     margin-top: -60px;
@@ -79,24 +75,6 @@
       transform: scale(1.2);
       transition: scale 200ms ease-in;
     }
-  }
-  .menu-et-check:hover .check {
-    transform: translate(-45px, 0);
-    transition: transform 100ms ease-in;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
-    width: 50px;
-    color: white;
-    background-color: green;
-    border-radius: 0 15px 15px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    opacity: 1;
-  }
-  .menu__plats:hover {
-    border-radius: 15px 0 0 15px;
   }
 
   h2 {

@@ -45,7 +45,8 @@ button:hover {
 }
 
 .coeur {
-  font-size: 22px;
+  width: 17px;
+  height: 17px;
 }
 .coeur i {
   position: absolute;
@@ -54,7 +55,7 @@ button:hover {
 .coeur .coeur-2 {
   visibility: hidden;
 }
-.coeur:active .coeur-2 {
+.coeur:hover .coeur-2 {
   background-image: linear-gradient(0deg, #9356DC, #FF79DA);
   background-clip: text;
   visibility: visible;
@@ -317,9 +318,6 @@ button:hover {
     margin-top: -110px;
     padding: 30px;
   }
-  .logo-header .header {
-    gap: 220px;
-  }
   .fonctionnement {
     padding: 48px 50px 68px 50px;
   }
@@ -355,10 +353,6 @@ button:hover {
     grid-template-columns: 40% 40%;
     gap: 50px 100px;
   }
-  .logo-header .header {
-    justify-content: flex-start;
-    gap: 410px;
-  }
   .container {
     position: relative;
     margin-top: -60px;
@@ -381,24 +375,6 @@ button:hover {
     color: transparent;
     transform: scale(1.2);
     transition: scale 200ms ease-in;
-  }
-  .menu-et-check:hover .check {
-    transform: translate(-45px, 0);
-    transition: transform 100ms ease-in;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
-    width: 50px;
-    color: white;
-    background-color: green;
-    border-radius: 0 15px 15px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    opacity: 1;
-  }
-  .menu__plats:hover {
-    border-radius: 15px 0 0 15px;
   }
   h2 {
     margin: 0 223px;
