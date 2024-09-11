@@ -21,7 +21,7 @@ button {
   text-align: center;
   border: none;
   color: white;
-  background: linear-gradient(0deg, #9356DC, #FF79DA);
+  background: linear-gradient(0deg, #9356dc, #ff79da);
   border-radius: 30px;
   width: 218px;
   height: 50px;
@@ -36,28 +36,29 @@ button:hover {
 
 .logo-header {
   text-align: center;
-  padding: 14px 0 13px 0;
+  padding: 14px 89px 13px 89px;
   margin-bottom: 10px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
 }
 .logo-header img {
-  width: 162px;
-  height: 44px;
+  width: 200px;
+  height: 34.2px;
+  object-fit: contain;
 }
 
-.coeur {
-  width: 17px;
-  height: 17px;
-}
 .coeur i {
   position: absolute;
-  right: 33px;
+  right: 25px;
+  bottom: 33px;
+  font-size: 24px;
 }
 .coeur .coeur-2 {
   visibility: hidden;
 }
 .coeur:hover .coeur-2 {
-  background-image: linear-gradient(0deg, #9356DC, #FF79DA);
+  background-image: linear-gradient(0deg, #ff79da, #9356dc);
   background-clip: text;
   visibility: visible;
   color: transparent;
@@ -75,6 +76,7 @@ button:hover {
   padding: 22px 25px;
   gap: 16px;
   width: 100%;
+  font-size: 16px;
 }
 .footer h1 {
   font-size: 18px;
@@ -87,15 +89,31 @@ button:hover {
   display: flex;
   flex-direction: column;
   gap: 7px;
+  font-weight: 400;
+}
+.footer__contenu .info-2 {
+  gap: 9px;
+}
+.footer__contenu .info-2 span {
+  font-size: 11px;
+  margin-top: 4px;
 }
 .footer__contenu--info {
   display: flex;
   flex-direction: row;
   gap: 11px;
+  font-weight: 500;
+}
+.footer__contenu--info span {
+  font-size: 13px;
 }
 
 .logo-header {
   box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
 }
 .logo-header .header {
   display: flex;
@@ -104,6 +122,7 @@ button:hover {
   align-items: center;
   padding-left: 17px;
   position: relative;
+  padding: 21px 0 13px 17px;
 }
 .logo-header .header a {
   font-size: 30px;
@@ -123,13 +142,13 @@ button:hover {
 }
 
 .container {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   border-radius: 40px 40px 0 0;
   position: relative;
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin-top: -60px;
+  margin-top: -41px;
 }
 .container h1 {
   font-family: "Shrikhand";
@@ -148,13 +167,17 @@ button:hover {
   font-size: 22px;
   bottom: 10px;
 }
+.container .nom-restaurants .coeur i {
+  right: 47px;
+}
 
 h2 {
   font-size: 16px;
   font-weight: 300;
-  margin: 0 13px;
+  margin-left: 13px;
   border-bottom: 3px solid #99e2d0;
   width: 40px;
+  padding-bottom: 7px;
 }
 
 .ctn-menu {
@@ -171,7 +194,7 @@ h2 {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  margin: 0 13px;
+  padding: 0 13px;
   gap: 12px;
 }
 .menu-et-check {
@@ -186,7 +209,7 @@ h2 {
 .menu-et-check .check {
   width: 50px;
   height: 100%;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   color: #ffffff;
   display: flex;
   justify-content: center;
@@ -282,18 +305,44 @@ footer {
 }
 /*****************media query ordinateur************************************/
 @media (min-width: 1024px) {
+  .logo-header {
+    margin-bottom: 0;
+    box-shadow: none;
+  }
+  .logo-header .header {
+    padding: 30px 0 32px 17px;
+  }
+  .logo-header .photo-restaurant img {
+    height: 434px;
+  }
+  .localisation {
+    box-shadow: none;
+  }
+  .localisation__content {
+    height: 100%;
+  }
   .presentation {
-    gap: 25px;
+    gap: 21px;
+    margin-top: 0;
   }
   .presentation br {
     display: none;
   }
+  .presentation__titre {
+    font-size: 40px;
+    padding-bottom: 8px;
+  }
+  .presentation__prg {
+    padding: 0 0 9px 0;
+  }
   .fonctionnement {
     padding: 50px 180px;
+    gap: 28px;
   }
   .fonctionnement__content {
     display: flex;
     flex-direction: row;
+    gap: 36.5px;
   }
   .fonctionnement__choix {
     width: 322px;
@@ -305,26 +354,32 @@ footer {
   .restaurant-accueil__content {
     display: grid;
     grid-template-rows: 251px 251px;
-    grid-template-columns: 40% 40%;
+    grid-template-columns: 45% 45%;
     gap: 50px 100px;
+  }
+  .restaurant-accueil__content--card {
+    height: 250px;
+  }
+  .restaurant-accueil__content--card img {
+    height: 174px;
   }
   .container {
     position: relative;
-    margin-top: -60px;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-top: -40px;
+    width: 71%;
+    margin-left: 14.5%;
+    margin-right: 14.5%;
   }
   .container .nom-restaurants {
     justify-content: center;
+    padding-top: 51px;
   }
-  .container .nom-restaurants .coeur-1,
-  .container .nom-restaurants .coeur-2 {
-    margin-right: 308px;
+  .container .nom-restaurants .coeur i {
     font-size: 22px;
+    right: 274px;
   }
   .coeur:hover .coeur-2 {
-    background-image: linear-gradient(0deg, #9356DC, #FF79DA);
+    background-image: linear-gradient(0deg, #9356dc, #ff79da);
     background-clip: text;
     visibility: visible;
     color: transparent;
@@ -332,7 +387,7 @@ footer {
     transition: scale 200ms ease-in;
   }
   h2 {
-    margin: 0 223px;
+    margin-left: 210px;
   }
   .menu {
     padding: 0 210px;
@@ -344,17 +399,22 @@ footer {
   .footer {
     display: flex;
     flex-direction: row-reverse;
+    align-items: flex-end;
     padding: 30px 25px;
+    gap: 67px;
   }
   .footer h1 {
-    margin-left: 23px;
+    margin: 0 44px 0 23px;
   }
   .footer__contenu {
     display: flex;
     flex-direction: row;
   }
   .footer__contenu .mention-legale {
-    margin-left: 16px;
+    margin-left: 36px;
+  }
+  .footer__contenu .contact {
+    margin-left: 9px;
   }
   .footer__contenu--info {
     display: flex;

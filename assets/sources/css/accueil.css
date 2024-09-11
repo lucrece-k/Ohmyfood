@@ -35,22 +35,23 @@ button:hover {
 
 .logo-header {
   text-align: center;
-  padding: 14px 0 13px 0;
+  padding: 14px 89px 13px 89px;
   margin-bottom: 10px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
 }
 .logo-header img {
-  width: 162px;
-  height: 44px;
+  width: 200px;
+  height: 34.2px;
+  object-fit: contain;
 }
 
-.coeur {
-  width: 17px;
-  height: 17px;
-}
 .coeur i {
   position: absolute;
-  right: 33px;
+  right: 25px;
+  bottom: 33px;
+  font-size: 24px;
 }
 .coeur .coeur-2 {
   visibility: hidden;
@@ -74,6 +75,7 @@ button:hover {
   padding: 22px 25px;
   gap: 16px;
   width: 100%;
+  font-size: 16px;
 }
 .footer h1 {
   font-size: 18px;
@@ -86,11 +88,23 @@ button:hover {
   display: flex;
   flex-direction: column;
   gap: 7px;
+  font-weight: 400;
+}
+.footer__contenu .info-2 {
+  gap: 9px;
+}
+.footer__contenu .info-2 span {
+  font-size: 11px;
+  margin-top: 4px;
 }
 .footer__contenu--info {
   display: flex;
   flex-direction: row;
   gap: 11px;
+  font-weight: 500;
+}
+.footer__contenu--info span {
+  font-size: 13px;
 }
 
 /*creation du loader*/
@@ -146,6 +160,7 @@ button:hover {
   background-color: #EAEAEA;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   width: 100%;
+  height: 50px;
 }
 .localisation__content {
   display: flex;
@@ -155,10 +170,14 @@ button:hover {
   gap: 17px;
   padding: 10px;
 }
+.localisation span {
+  color: #353535;
+}
 .localisation input {
   border: none;
   background-color: #EAEAEA;
-  font-size: 17px;
+  font-size: 16px;
+  font-weight: 500;
   width: 115px;
 }
 
@@ -167,21 +186,22 @@ button:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 15px;
   margin-top: 10px;
-  padding: 39px 0 57px 0;
+  padding: 29px 0 57px 0;
   background-color: #F6F6F6;
 }
 .presentation__titre {
   font-size: 24px;
   font-weight: 700;
   text-align: center;
+  padding-bottom: 12px;
 }
 .presentation__prg {
   font-size: 18px;
   font-weight: 300;
   color: #353535;
   text-align: center;
+  padding: 0 0 27px 23px;
 }
 
 .fonctionnement {
@@ -197,7 +217,7 @@ button:hover {
   justify-content: center;
   align-items: center;
   gap: 25px;
-  padding: 0 20px 0 32px;
+  padding: 0 20px 0 32.5px;
 }
 .fonctionnement__titre {
   font-size: 24px;
@@ -208,12 +228,12 @@ button:hover {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   font-size: 16px;
   font-weight: 500;
   border: none;
   background-color: #f6f6f6;
-  border-radius: 25px;
+  border-radius: 20px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   width: 100%;
   height: 72px;
@@ -223,30 +243,35 @@ button:hover {
   filter: brightness(1.1);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.7);
 }
-.fonctionnement__choix i {
-  font-size: 30px;
-}
 .fonctionnement__choix p {
   margin-left: 10px;
-  font-size: 18px;
+  font-size: 16px;
 }
 .fonctionnement span {
   border: none;
   text-align: center;
   background-color: #9356DC;
-  width: 30px;
-  border-radius: 30px;
-  padding: 5px;
+  width: 24px;
+  height: 24px;
+  border-radius: 24px;
+  padding: 3px;
   color: white;
+  font-size: 14px;
   position: relative;
   right: 10px;
 }
 .fonctionnement .fa-mobile-screen-button,
 .fonctionnement .fa-list-ul {
   color: #7e7e7e;
+  font-size: 19.5px;
+}
+.fonctionnement .fa-list-ul {
+  margin-bottom: 5px;
 }
 .fonctionnement .fa-store {
   color: #9356DC;
+  font-size: 18px;
+  margin-bottom: 7px;
 }
 
 .restaurant-accueil {
@@ -255,9 +280,12 @@ button:hover {
   justify-content: flex-start;
   align-items: flex-start;
   background-color: #f6f6f6;
-  padding: 54px 18px;
-  gap: 15px;
+  padding: 54px 18px 66px 17px;
+  gap: 20px;
   width: 100%;
+}
+.restaurant-accueil h1 {
+  padding-left: 3px;
 }
 .restaurant-accueil__content {
   display: flex;
@@ -265,21 +293,28 @@ button:hover {
   justify-content: center;
   align-items: center;
   width: 100%;
-  gap: 16px;
+  gap: 18px;
 }
 .restaurant-accueil__content a {
   width: 100%;
+}
+.restaurant-accueil__content .content__titre {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.restaurant-accueil__content p {
+  font-weight: 300;
 }
 .restaurant-accueil__content--card {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 7px;
   border: none;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 15px;
   width: 100%;
-  height: 251px;
+  height: 276px;
   position: relative;
 }
 .restaurant-accueil__content--card .content {
@@ -293,23 +328,28 @@ button:hover {
 }
 .restaurant-accueil__content--card .content {
   font-size: 17px;
-  margin: 0 10px 0 10px;
+  height: 77px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  padding-left: 13px;
 }
 .restaurant-accueil .nouveau::before {
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 10px;
-  right: 20px;
+  top: 15px;
+  right: 15px;
   content: "Nouveau";
   background: #99e2d0;
   color: #008766;
   height: 29px;
   width: 80px;
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 /*****************media query tablette************************************/
@@ -327,18 +367,39 @@ button:hover {
 }
 /*****************media query ordinateur************************************/
 @media (min-width: 1024px) {
+  .logo-header {
+    padding: 30px 0 31.8px 0;
+    margin-bottom: 0;
+    box-shadow: none;
+  }
+  .localisation {
+    box-shadow: none;
+  }
+  .localisation__content {
+    height: 100%;
+  }
   .presentation {
-    gap: 25px;
+    gap: 21px;
+    margin-top: 0;
   }
   .presentation br {
     display: none;
   }
+  .presentation__titre {
+    font-size: 40px;
+    padding-bottom: 8px;
+  }
+  .presentation__prg {
+    padding: 0 0 9px 0;
+  }
   .fonctionnement {
     padding: 50px 180px;
+    gap: 28px;
   }
   .fonctionnement__content {
     display: flex;
     flex-direction: row;
+    gap: 36.5px;
   }
   .fonctionnement__choix {
     width: 322px;
@@ -350,8 +411,14 @@ button:hover {
   .restaurant-accueil__content {
     display: grid;
     grid-template-rows: 251px 251px;
-    grid-template-columns: 40% 40%;
+    grid-template-columns: 45% 45%;
     gap: 50px 100px;
+  }
+  .restaurant-accueil__content--card {
+    height: 250px;
+  }
+  .restaurant-accueil__content--card img {
+    height: 174px;
   }
   .container {
     position: relative;
@@ -389,17 +456,22 @@ button:hover {
   .footer {
     display: flex;
     flex-direction: row-reverse;
+    align-items: flex-end;
     padding: 30px 25px;
+    gap: 67px;
   }
   .footer h1 {
-    margin-left: 23px;
+    margin: 0 44px 0 23px;
   }
   .footer__contenu {
     display: flex;
     flex-direction: row;
   }
   .footer__contenu .mention-legale {
-    margin-left: 16px;
+    margin-left: 36px;
+  }
+  .footer__contenu .contact {
+    margin-left: 9px;
   }
   .footer__contenu--info {
     display: flex;

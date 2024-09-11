@@ -36,23 +36,25 @@ button {
 
 .logo-header {
   text-align: center;
-  padding: 14px 0 13px 0;
+  padding: 14px 89px 13px 89px;
   margin-bottom: 10px;
   box-shadow: $box-shadow;
+  display: flex;
+  justify-content: center;
 
   & img {
-    width: 162px;
-    height: 44px;
+    width: 200px;
+    height: 34.2px;
+    object-fit: contain;
   }
 }
 
 .coeur {
-  width: 17px;
-  height: 17px;
-
   i {
     position: absolute;
-    right: 33px;
+    right: 25px;
+    bottom: 33px;
+    font-size: 24px;
   }
 
   .coeur-2 {
@@ -60,7 +62,7 @@ button {
   }
 
   &:hover .coeur-2 {
-    background-image: $linearGradient;
+    background-image: $coeurLinearGradient;
     background-clip: text;
     visibility: visible;
     color: transparent;
@@ -79,6 +81,7 @@ button {
   padding: 22px 25px;
   gap: 16px;
   width: 100%;
+  font-size: 16px;
 
   & h1 {
     font-size: 18px;
@@ -92,11 +95,23 @@ button {
     display: flex;
     flex-direction: column;
     gap: 7px;
-  }
+    font-weight: 400;
 
+    & .info-2 {
+      gap: 9px;
+      & span {
+        font-size: 11px;
+        margin-top: 4px;
+      }
+    }
+  }
   &__contenu--info {
     display: flex;
     flex-direction: row;
     gap: 11px;
+    font-weight: 500;
+    & span {
+      font-size: 13px;
+    }
   }
 }

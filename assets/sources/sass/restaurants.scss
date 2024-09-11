@@ -3,6 +3,10 @@
 
 .logo-header {
   box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
 
   .header {
     display: flex;
@@ -11,6 +15,7 @@
     align-items: center;
     padding-left: 17px;
     position: relative;
+    padding: 21px 0 13px 17px;
 
     a {
       font-size: 30px;
@@ -39,7 +44,7 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin-top: -60px;
+  margin-top: -41px;
 
   h1 {
     font-family: $ff-secondaire;
@@ -59,15 +64,19 @@
       font-size: 22px;
       bottom: 10px;
     }
+    .coeur i {
+      right: 47px;
+    }
   }
 }
 
 h2 {
   font-size: 16px;
   font-weight: 300;
-  margin: 0 13px;
+  margin-left: 13px;
   border-bottom: 3px solid #99e2d0;
   width: 40px;
+  padding-bottom: 7px;
 }
 
 .ctn-menu {
@@ -81,13 +90,12 @@ h2 {
     }
   }
 }
-
 .menu {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  margin: 0 13px;
+  padding: 0 13px;
   gap: 12px;
 
   &-et-check {
@@ -111,11 +119,10 @@ h2 {
       position: absolute;
       right: -50px;
       opacity: 1;
-      transition: .1s ease-in-out;
+      transition: 0.1s ease-in-out;
     }
 
-
-    &:hover  {
+    &:hover {
       .check {
         right: 0;
       }
@@ -154,7 +161,7 @@ h2 {
     justify-content: flex-end;
     align-items: flex-end;
     gap: 10px;
-    transition: .1s ease-in-out;
+    transition: 0.1s ease-in-out;
   }
 }
 

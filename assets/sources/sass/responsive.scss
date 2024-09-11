@@ -15,20 +15,46 @@
 
 /*****************media query ordinateur************************************/
 @media (min-width: 1024px) {
+  .logo-header {
+    margin-bottom: 0;
+    box-shadow: none;
+    .header {
+      padding: 30px 0 32px 17px;
+    }
+    .photo-restaurant img {
+      height: 434px;
+    }
+  }
+  .localisation {
+    box-shadow: none;
+    &__content {
+      height: 100%;
+    }
+  }
   .presentation {
-    gap: 25px;
+    gap: 21px;
+    margin-top: 0;
 
     & br {
       display: none;
+    }
+    &__titre {
+      font-size: 40px;
+      padding-bottom: 8px;
+    }
+    &__prg {
+      padding: 0 0 9px 0;
     }
   }
 
   .fonctionnement {
     padding: 50px 180px;
+    gap: 28px;
 
     &__content {
       display: flex;
       flex-direction: row;
+      gap: 36.5px;
     }
 
     &__choix {
@@ -43,25 +69,32 @@
     &__content {
       display: grid;
       grid-template-rows: 251px 251px;
-      grid-template-columns: 40% 40%;
+      grid-template-columns: 45% 45%;
       gap: 50px 100px;
+    }
+    &__content--card {
+      height: 250px;
+    }
+    &__content--card img {
+      height: 174px;
     }
   }
 
   .container {
     position: relative;
-    margin-top: -60px;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-top: -40px;
+    width: 71%;
+    margin-left: 14.5%;
+    margin-right: 14.5%;
 
     & .nom-restaurants {
       justify-content: center;
+      padding-top: 51px;
 
-      & .coeur-1,
-      .coeur-2 {
-        margin-right: 308px;
+      & .coeur i {
+        // margin-right: 308px;
         font-size: 22px;
+        right: 274px;
       }
     }
   }
@@ -78,7 +111,7 @@
   }
 
   h2 {
-    margin: 0 223px;
+    margin-left: 210px;
   }
 
   .menu {
@@ -93,10 +126,12 @@
   .footer {
     display: flex;
     flex-direction: row-reverse;
+    align-items: flex-end;
     padding: 30px 25px;
+    gap: 67px;
 
     & h1 {
-      margin-left: 23px;
+      margin: 0 44px 0 23px;
     }
 
     &__contenu {
@@ -104,7 +139,10 @@
       flex-direction: row;
 
       & .mention-legale {
-        margin-left: 16px;
+        margin-left: 36px;
+      }
+      & .contact {
+        margin-left: 9px;
       }
 
       &--info {

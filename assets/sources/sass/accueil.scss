@@ -57,6 +57,7 @@
   background-color: $couleur-localisation;
   box-shadow: $box-shadow;
   width: 100%;
+  height: 50px;
 
   &__content {
     display: flex;
@@ -66,11 +67,15 @@
     gap: 17px;
     padding: 10px;
   }
+  & span {
+    color: $couleur-grey;
+  }
 
   & input {
     border: none;
     background-color: $couleur-localisation;
-    font-size: 17px;
+    font-size: 16px;
+    font-weight: 500;
     width: 115px;
   }
 }
@@ -80,15 +85,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+
   margin-top: 10px;
-  padding: 39px 0 57px 0;
+  padding: 29px 0 57px 0;
   background-color: $background-restaurants;
 
   &__titre {
     font-size: $fs-h1;
     font-weight: 700;
     text-align: center;
+    padding-bottom: 12px;
   }
 
   &__prg {
@@ -96,6 +102,7 @@
     font-weight: 300;
     color: $couleur-grey;
     text-align: center;
+    padding: 0 0 27px 23px;
   }
 }
 
@@ -112,7 +119,7 @@
     justify-content: center;
     align-items: center;
     gap: 25px;
-    padding: 0 20px 0 32px;
+    padding: 0 20px 0 32.5px;
   }
 
   &__titre {
@@ -125,12 +132,12 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
     font-size: 16px;
     font-weight: 500;
     border: none;
     background-color: #f6f6f6;
-    border-radius: 25px;
+    border-radius: 20px;
     box-shadow: $box-shadow;
     width: 100%;
     height: 72px;
@@ -142,23 +149,21 @@
     }
   }
 
-  &__choix i {
-    font-size: 30px;
-  }
-
   &__choix p {
     margin-left: 10px;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   & span {
     border: none;
     text-align: center;
     background-color: $couleur-primaire;
-    width: 30px;
-    border-radius: 30px;
-    padding: 5px;
+    width: 24px;
+    height: 24px;
+    border-radius: 24px;
+    padding: 3px;
     color: white;
+    font-size: 14px;
     position: relative;
     right: 10px;
   }
@@ -166,10 +171,16 @@
   & .fa-mobile-screen-button,
   .fa-list-ul {
     color: #7e7e7e;
+    font-size: 19.5px;
+  }
+  & .fa-list-ul {
+    margin-bottom: 5px;
   }
 
   & .fa-store {
     color: $couleur-primaire;
+    font-size: 18px;
+    margin-bottom: 7px;
   }
 }
 
@@ -179,9 +190,12 @@
   justify-content: flex-start;
   align-items: flex-start;
   background-color: #f6f6f6;
-  padding: 54px 18px;
-  gap: 15px;
+  padding: 54px 18px 66px 17px;
+  gap: 20px;
   width: 100%;
+  & h1 {
+    padding-left: 3px;
+  }
 
   &__content {
     display: flex;
@@ -189,10 +203,18 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    gap: 16px;
+    gap: 18px;
 
     & a {
       width: 100%;
+    }
+    & .content__titre {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    & p {
+      font-weight: 300;
     }
   }
 
@@ -200,12 +222,11 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 7px;
     border: none;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 15px;
     width: 100%;
-    height: 251px;
+    height: 276px;
     position: relative;
     & .content {
       width: 100%;
@@ -221,10 +242,12 @@
 
   &__content--card .content {
     font-size: 17px;
-    margin: 0 10px 0 10px;
+    height: 77px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    padding-left: 13px;
   }
 
   .nouveau::before {
@@ -232,13 +255,16 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 10px;
-    right: 20px;
+    top: 15px;
+    right: 15px;
     content: 'Nouveau';
     background: #99e2d0;
     color: #008766;
     height: 29px;
     width: 80px;
+    border-radius: 2px;
+    font-size: 14px;
+    font-weight: 500;
   }
 }
 
