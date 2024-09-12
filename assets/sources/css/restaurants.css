@@ -207,7 +207,7 @@ h2 {
   border-radius: 15px;
 }
 .menu-et-check .check {
-  width: 50px;
+  width: 57px;
   height: 100%;
   background-color: #99e2d0;
   color: #ffffff;
@@ -216,15 +216,23 @@ h2 {
   align-items: center;
   border: none;
   position: absolute;
-  right: -50px;
+  right: -57px;
   opacity: 1;
   transition: 0.1s ease-in-out;
+}
+.menu-et-check .check i {
+  border-radius: 24px;
+  background-color: white;
+  padding: 2px;
+}
+.menu-et-check .check .fa-check {
+  color: #99e2d0;
 }
 .menu-et-check:hover .check {
   right: 0;
 }
 .menu-et-check:hover .menu-prix {
-  transform: translateX(-50px);
+  transform: translateX(-57px);
 }
 .menu__plats {
   display: flex;
@@ -413,7 +421,7 @@ footer {
   .footer__contenu .mention-legale {
     margin-left: 36px;
   }
-  .footer__contenu .contact {
+  .footer__contenu a {
     margin-left: 9px;
   }
   .footer__contenu--info {
