@@ -32,7 +32,7 @@
 }
 
 .photo-restaurant img {
-  width: $width;
+  width: $width-100;
   height: 275px;
   object-fit: cover;
 }
@@ -61,11 +61,20 @@
 
     .coeur-1,
     .coeur-2 {
-      font-size: 22px;
       bottom: 10px;
     }
+
     .coeur i {
       right: 47px;
+      font-size: 24px;
+    }
+    .coeur .coeur-2 {
+      font-size: 12px;
+      right: 60px;
+    }
+    .coeur .coeur-2-ldds,
+    .coeur-1-ldds {
+      right: 45px;
     }
   }
 }
@@ -101,7 +110,7 @@ h3 {
   &-et-check {
     display: flex;
     flex-direction: row;
-    width: $width;
+    width: $width-100;
     position: relative;
     overflow: hidden;
     box-shadow: $box-shadow-restaurant;
@@ -150,7 +159,7 @@ h3 {
     border: none;
     background-color: white;
     padding: 15px;
-    width: $width;
+    width: $width-100;
     position: relative;
     cursor: pointer;
   }

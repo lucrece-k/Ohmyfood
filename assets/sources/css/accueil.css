@@ -55,14 +55,19 @@ button:hover {
 }
 .coeur .coeur-2 {
   visibility: hidden;
+  position: relative;
+  font-size: 12px;
+  top: 13px;
+  left: 38px;
 }
 .coeur:hover .coeur-2 {
   background-image: linear-gradient(0deg, #ff79da, #9356dc);
   background-clip: text;
   visibility: visible;
   color: transparent;
-  transform: scale(1.2);
-  transition: scale 0ms ease-in;
+  transform: translateY(-9px) scale(2.2);
+  transform-origin: bottom;
+  transition: all 600ms ease-in-out;
 }
 
 .footer {
@@ -350,6 +355,10 @@ button:hover {
   border-radius: 2px;
   font-size: 14px;
   font-weight: 500;
+}
+.restaurant-accueil .coeur-2 {
+  top: 7px;
+  left: -31px;
 }
 
 /*****************media query ordinateur************************************/

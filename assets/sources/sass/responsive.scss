@@ -14,6 +14,8 @@
 // }
 
 /*****************media query ordinateur************************************/
+@import 'variables';
+
 @media (min-width: 1024px) {
   .logo-header {
     margin-bottom: 0;
@@ -99,9 +101,24 @@
       padding-top: 51px;
 
       & .coeur i {
-        font-size: 22px;
-        right: 300px;
+        font-size: 24px;
+        right: 305px;
       }
+      & .coeur .coeur-1-ldds {
+        font-size: 24px;
+        right: 310px;
+      }
+      & .coeur .coeur-1-lne {
+        font-size: 24px;
+        right: 302px;
+      }
+      & .coeur .coeur-1-alf {
+        font-size: 24px;
+        right: 335px;
+      }
+    }
+    .coeur-2 {
+      left: 32px;
     }
   }
 
@@ -111,7 +128,7 @@
 
   .menu {
     padding: 0 210px;
-    width: $width;
+    width: $width-100;
   }
 
   .button-commander {

@@ -1,0 +1,132 @@
+/*****************media query ordinateur************************************/
+@media (min-width: 1024px) {
+  .logo-header {
+    margin-bottom: 0;
+    box-shadow: none;
+  }
+  .logo-header .header {
+    padding: 30px 0 32px 17px;
+  }
+  .logo-header .photo-restaurant img {
+    height: 434px;
+  }
+  .localisation {
+    box-shadow: none;
+  }
+  .localisation__content {
+    height: 100%;
+  }
+  .presentation {
+    gap: 21px;
+    margin-top: 0;
+  }
+  .presentation br {
+    display: none;
+  }
+  .presentation__titre {
+    font-size: 40px;
+    padding-bottom: 8px;
+  }
+  .presentation__prg {
+    padding: 0 0 9px 0;
+  }
+  .fonctionnement {
+    padding: 50px 180px;
+    gap: 28px;
+  }
+  .fonctionnement__content {
+    display: flex;
+    flex-direction: row;
+    gap: 36.5px;
+    padding: 0 20px 0 7px;
+  }
+  .fonctionnement__choix {
+    width: 322px;
+  }
+  .fonctionnement__titre {
+    padding-left: 0;
+  }
+  .restaurant-accueil {
+    gap: 28px;
+    padding: 30px 180px;
+  }
+  .restaurant-accueil h2 {
+    padding-left: 0;
+  }
+  .restaurant-accueil__content {
+    display: grid;
+    grid-template-rows: 251px 251px;
+    grid-template-columns: 45% 45%;
+    gap: 50px 100px;
+  }
+  .restaurant-accueil__content--card {
+    height: 250px;
+  }
+  .restaurant-accueil__content--card img {
+    height: 174px;
+  }
+  .container {
+    position: relative;
+    margin-top: -40px;
+    width: 71%;
+    margin-left: 14.5%;
+    margin-right: 14.5%;
+  }
+  .container .nom-restaurants {
+    justify-content: center;
+    padding-top: 51px;
+  }
+  .container .nom-restaurants .coeur i {
+    font-size: 24px;
+    right: 305px;
+  }
+  .container .nom-restaurants .coeur .coeur-1-ldds {
+    font-size: 24px;
+    right: 310px;
+  }
+  .container .nom-restaurants .coeur .coeur-1-lne {
+    font-size: 24px;
+    right: 302px;
+  }
+  .container .nom-restaurants .coeur .coeur-1-alf {
+    font-size: 24px;
+    right: 335px;
+  }
+  .container .coeur-2 {
+    left: 32px;
+  }
+  h3 {
+    margin-left: 210px;
+  }
+  .menu {
+    padding: 0 210px;
+    width: 100%;
+  }
+  .button-commander {
+    margin-bottom: 40px;
+  }
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    padding: 30px 25px;
+    gap: 67px;
+  }
+  .footer h2 {
+    margin: 0 44px 0 23px;
+  }
+  .footer__contenu {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer__contenu .mention-legale {
+    margin-left: 36px;
+  }
+  .footer__contenu a {
+    margin-left: 9px;
+  }
+  .footer__contenu--info {
+    display: flex;
+    flex-direction: row;
+  }
+}/*# sourceMappingURL=responsive.css.map */

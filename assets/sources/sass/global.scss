@@ -1,3 +1,4 @@
+@import 'variables';
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +14,7 @@ a {
 section,
 body,
 html {
-  width: $width;
+  width: $width-100;
 }
 
 button {
@@ -59,6 +60,10 @@ button {
 
   .coeur-2 {
     visibility: hidden;
+    position: relative;
+    font-size: 12px;
+    top: 13px;
+    left: -36px;
   }
 
   &:hover .coeur-2 {
@@ -66,8 +71,9 @@ button {
     background-clip: text;
     visibility: visible;
     color: transparent;
-    transform: scale(1.2);
-    transition: scale 0ms ease-in;
+    transform: translateY(-9px) scale(2.2);
+    transform-origin: bottom;
+    transition: all 600ms ease-in-out;
   }
 }
 
@@ -80,7 +86,7 @@ button {
   color: $white;
   padding: 22px 25px;
   gap: 16px;
-  width: $width;
+  width: $width-100;
   font-size: 16px;
 
   & h2 {

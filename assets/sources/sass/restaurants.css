@@ -45,7 +45,8 @@ button:hover {
 .logo-header img {
   width: 200px;
   height: 34.2px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .coeur i {
@@ -63,7 +64,8 @@ button:hover {
 }
 .coeur:hover .coeur-2 {
   background-image: linear-gradient(0deg, #ff79da, #9356dc);
-  background-clip: text;
+  -webkit-background-clip: text;
+          background-clip: text;
   visibility: visible;
   color: transparent;
   transform: translateY(-9px) scale(2.2);
@@ -137,13 +139,15 @@ button:hover {
 }
 .logo-header .header img {
   padding: 0;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .photo-restaurant img {
   width: 100%;
   height: 275px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .container {
@@ -393,20 +397,11 @@ footer {
     font-size: 24px;
     right: 305px;
   }
-  .container .nom-restaurants .coeur .coeur-1-ldds {
-    font-size: 24px;
-    right: 310px;
-  }
-  .container .nom-restaurants .coeur .coeur-1-lne {
-    font-size: 24px;
-    right: 302px;
-  }
-  .container .nom-restaurants .coeur .coeur-1-alf {
-    font-size: 24px;
-    right: 335px;
-  }
   .container .coeur-2 {
     left: 32px;
+  }
+  .container .coeur .coeur-1-ldds {
+    right: 310px;
   }
   h3 {
     margin-left: 210px;
@@ -442,6 +437,4 @@ footer {
     display: flex;
     flex-direction: row;
   }
-}
-
-/*# sourceMappingURL=restaurants.css.map */
+}/*# sourceMappingURL=restaurants.css.map */
