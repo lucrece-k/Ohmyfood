@@ -1,17 +1,17 @@
-/*****************media query tablette************************************/
-@media (min-width: 768px) {
-  .container {
-    margin-top: -110px;
-    padding: 30px;
-  }
+// /*****************media query tablette************************************/
+// @media (min-width: 768px) {
+//   .container {
+//     margin-top: -110px;
+//     padding: 30px;
+//   }
 
-  .fonctionnement {
-    padding: 48px 50px 68px 50px;
-  }
-  .restaurant-accueil {
-    padding: 54px 50px;
-  }
-}
+//   .fonctionnement {
+//     padding: 48px 50px 68px 50px;
+//   }
+//   .restaurant-accueil {
+//     padding: 54px 50px;
+//   }
+// }
 
 /*****************media query ordinateur************************************/
 @media (min-width: 1024px) {
@@ -55,16 +55,23 @@
       display: flex;
       flex-direction: row;
       gap: 36.5px;
+      padding: 0 20px 0 7px;
     }
 
     &__choix {
       width: 322px;
+    }
+    &__titre {
+      padding-left: 0;
     }
   }
 
   .restaurant-accueil {
     gap: 28px;
     padding: 30px 180px;
+    h2 {
+      padding-left: 0;
+    }
 
     &__content {
       display: grid;
@@ -92,9 +99,8 @@
       padding-top: 51px;
 
       & .coeur i {
-        // margin-right: 308px;
         font-size: 22px;
-        right: 274px;
+        right: 300px;
       }
     }
   }
@@ -110,7 +116,7 @@
     }
   }
 
-  h2 {
+  h3 {
     margin-left: 210px;
   }
 
@@ -130,7 +136,7 @@
     padding: 30px 25px;
     gap: 67px;
 
-    & h1 {
+    & h2 {
       margin: 0 44px 0 23px;
     }
 

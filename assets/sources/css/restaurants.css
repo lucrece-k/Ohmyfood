@@ -78,7 +78,7 @@ button:hover {
   width: 100%;
   font-size: 16px;
 }
-.footer h1 {
+.footer h2 {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -171,7 +171,7 @@ button:hover {
   right: 47px;
 }
 
-h2 {
+h3 {
   font-size: 16px;
   font-weight: 300;
   margin-left: 13px;
@@ -185,7 +185,7 @@ h2 {
   flex-direction: column;
   gap: 40px;
 }
-.ctn-menu .ent-pls-dsrt h2 {
+.ctn-menu .ent-pls-dsrt h3 {
   margin-bottom: 12px;
 }
 
@@ -298,19 +298,6 @@ footer {
   margin-top: 0;
 }
 
-/*****************media query tablette************************************/
-@media (min-width: 768px) {
-  .container {
-    margin-top: -110px;
-    padding: 30px;
-  }
-  .fonctionnement {
-    padding: 48px 50px 68px 50px;
-  }
-  .restaurant-accueil {
-    padding: 54px 50px;
-  }
-}
 /*****************media query ordinateur************************************/
 @media (min-width: 1024px) {
   .logo-header {
@@ -351,13 +338,20 @@ footer {
     display: flex;
     flex-direction: row;
     gap: 36.5px;
+    padding: 0 20px 0 7px;
   }
   .fonctionnement__choix {
     width: 322px;
   }
+  .fonctionnement__titre {
+    padding-left: 0;
+  }
   .restaurant-accueil {
     gap: 28px;
     padding: 30px 180px;
+  }
+  .restaurant-accueil h2 {
+    padding-left: 0;
   }
   .restaurant-accueil__content {
     display: grid;
@@ -384,7 +378,7 @@ footer {
   }
   .container .nom-restaurants .coeur i {
     font-size: 22px;
-    right: 274px;
+    right: 300px;
   }
   .coeur:hover .coeur-2 {
     background-image: linear-gradient(0deg, #9356dc, #ff79da);
@@ -394,7 +388,7 @@ footer {
     transform: scale(1.2);
     transition: scale 200ms ease-in;
   }
-  h2 {
+  h3 {
     margin-left: 210px;
   }
   .menu {
@@ -411,7 +405,7 @@ footer {
     padding: 30px 25px;
     gap: 67px;
   }
-  .footer h1 {
+  .footer h2 {
     margin: 0 44px 0 23px;
   }
   .footer__contenu {
