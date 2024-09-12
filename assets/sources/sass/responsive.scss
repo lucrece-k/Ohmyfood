@@ -105,24 +105,13 @@
     }
   }
 
-  .coeur {
-    &:hover .coeur-2 {
-      background-image: $linearGradient;
-      background-clip: text;
-      visibility: visible;
-      color: transparent;
-      transform: scale(1.2);
-      transition: scale 200ms ease-in;
-    }
-  }
-
   h3 {
     margin-left: 210px;
   }
 
   .menu {
     padding: 0 210px;
-    width: 100%;
+    width: $width;
   }
 
   .button-commander {

@@ -72,7 +72,7 @@ button:hover {
   justify-content: flex-start;
   align-items: flex-start;
   background-color: #353535;
-  color: white;
+  color: #ffffff;
   padding: 22px 25px;
   gap: 16px;
   width: 100%;
@@ -82,7 +82,7 @@ button:hover {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  color: white;
+  color: #ffffff;
   font-family: "Shrikhand";
 }
 .footer__contenu {
@@ -222,7 +222,7 @@ h3 {
 }
 .menu-et-check .check i {
   border-radius: 24px;
-  background-color: white;
+  background-color: #ffffff;
   padding: 2px;
 }
 .menu-et-check .check .fa-check {
@@ -379,14 +379,6 @@ footer {
   .container .nom-restaurants .coeur i {
     font-size: 22px;
     right: 300px;
-  }
-  .coeur:hover .coeur-2 {
-    background-image: linear-gradient(0deg, #9356dc, #ff79da);
-    background-clip: text;
-    visibility: visible;
-    color: transparent;
-    transform: scale(1.2);
-    transition: scale 200ms ease-in;
   }
   h3 {
     margin-left: 210px;

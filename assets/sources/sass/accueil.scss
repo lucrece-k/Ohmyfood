@@ -16,10 +16,10 @@
   transform-origin: top;
 
   &__animation {
-    border-top: 10px solid $couleur-primaire;
-    border-bottom: 10px solid $couleur-primaire;
-    border-right: 10px solid $couleur-secondaire;
-    border-left: 10px solid $couleur-secondaire;
+    border-top: 10px solid $purple-primaire;
+    border-bottom: 10px solid $purple-primaire;
+    border-right: 10px solid $purple-secondaire;
+    border-left: 10px solid $purple-secondaire;
     border-radius: 50%;
     width: 100px;
     height: 100px;
@@ -56,7 +56,7 @@
 .localisation {
   background-color: $couleur-localisation;
   box-shadow: $box-shadow;
-  width: 100%;
+  width: $width;
   height: 50px;
 
   &__content {
@@ -75,7 +75,7 @@
     border: none;
     background-color: $couleur-localisation;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: $font-weight-500;
     width: 115px;
   }
 }
@@ -134,17 +134,17 @@
     align-items: center;
     gap: 12px;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: $font-weight-500;
     border: none;
-    background-color: #f6f6f6;
+    background-color: $background-restaurants;
     border-radius: 20px;
     box-shadow: $box-shadow;
-    width: 100%;
+    width: $width;
     height: 72px;
     cursor: pointer;
 
     &:hover {
-      filter: brightness(1.1);
+      filter: $brightness;
       box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.7);
     }
   }
@@ -157,7 +157,7 @@
   & span {
     border: none;
     text-align: center;
-    background-color: $couleur-primaire;
+    background-color: $purple-primaire;
     width: 24px;
     height: 24px;
     border-radius: 24px;
@@ -178,7 +178,7 @@
   }
 
   & .fa-store {
-    color: $couleur-primaire;
+    color: $purple-primaire;
     font-size: 18px;
     margin-bottom: 7px;
   }
@@ -189,10 +189,10 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  background-color: #f6f6f6;
+  background-color: $background-restaurants;
   padding: 54px 18px 66px 17px;
   gap: 20px;
-  width: 100%;
+  width: $width;
   & h2 {
     padding-left: 3px;
   }
@@ -202,11 +202,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: $width;
     gap: 18px;
 
     & a {
-      width: 100%;
+      width: $width;
     }
     & .content__titre {
       display: flex;
@@ -214,7 +214,7 @@
       gap: 5px;
     }
     & p {
-      font-weight: 300;
+      font-weight: $font-weight-300;
     }
   }
 
@@ -225,16 +225,16 @@
     border: none;
     background-color: white;
     border-radius: 15px;
-    width: 100%;
+    width: $width;
     height: 276px;
     position: relative;
     & .content {
-      width: 100%;
+      width: $width;
     }
   }
 
   &__content--card img {
-    width: 100%;
+    width: $width;
     height: 200px;
     border-radius: 15px 15px 0 0;
     object-fit: cover;
@@ -258,13 +258,13 @@
     top: 15px;
     right: 15px;
     content: 'Nouveau';
-    background: #99e2d0;
-    color: #008766;
+    background: $green-background;
+    color: $nouveau-couleur;
     height: 29px;
     width: 80px;
     border-radius: 2px;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: $font-weight-500;
   }
 }
 

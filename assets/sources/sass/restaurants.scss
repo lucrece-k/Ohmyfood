@@ -19,7 +19,7 @@
 
     a {
       font-size: 30px;
-      color: #353535;
+      color: $couleur-grey;
       position: absolute;
       left: 20px;
     }
@@ -32,7 +32,7 @@
 }
 
 .photo-restaurant img {
-  width: 100%;
+  width: $width;
   height: 275px;
   object-fit: cover;
 }
@@ -47,7 +47,7 @@
   margin-top: -41px;
 
   h1 {
-    font-family: $ff-secondaire;
+    font-family: $ff-shrikhand;
     font-size: 28px;
   }
 
@@ -72,9 +72,9 @@
 
 h3 {
   font-size: 16px;
-  font-weight: 300;
+  font-weight: $font-weight-300;
   margin-left: 13px;
-  border-bottom: 3px solid #99e2d0;
+  border-bottom: 3px solid $green-background;
   width: 40px;
   padding-bottom: 7px;
 }
@@ -101,7 +101,7 @@ h3 {
   &-et-check {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: $width;
     position: relative;
     overflow: hidden;
     box-shadow: $box-shadow-restaurant;
@@ -110,7 +110,7 @@ h3 {
     .check {
       width: 57px;
       height: 100%;
-      background-color: $green-check;
+      background-color: $green-background;
       color: $white;
       display: flex;
       justify-content: center;
@@ -122,11 +122,11 @@ h3 {
       transition: 0.1s ease-in-out;
       i {
         border-radius: 24px;
-        background-color: white;
+        background-color: $white;
         padding: 2px;
       }
       .fa-check {
-        color: $green-check;
+        color: $green-background;
       }
     }
 
@@ -150,14 +150,14 @@ h3 {
     border: none;
     background-color: white;
     padding: 15px;
-    width: 100%;
+    width: $width;
     position: relative;
     cursor: pointer;
   }
 
   &--nom :first-child {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: $font-weight-500;
   }
 
   &--nom {
