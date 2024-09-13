@@ -59,6 +59,12 @@
     align-items: center;
     padding: 32px 17px 0 17px;
     position: relative;
+    h1 {
+      width: 80%;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      text-wrap: nowrap;
+    }
 
     .coeur-1,
     .coeur-2 {
@@ -66,7 +72,8 @@
     }
 
     .coeur i {
-      right: 47px;
+      right: 14px;
+      bottom: 0px;
       font-size: 24px;
     }
     .coeur .coeur-2 {
@@ -116,6 +123,17 @@ h3 {
     overflow: hidden;
     box-shadow: $box-shadow-restaurant;
     border-radius: 15px;
+    .menu--nom {
+      width: 75%;
+    }
+    .menu--nom h4,
+    p {
+      text-wrap: nowrap;
+      text-overflow: ellipsis;
+      display: block;
+
+      overflow: hidden;
+    }
 
     .check {
       width: 57px;
@@ -147,6 +165,10 @@ h3 {
 
       .menu-prix {
         transform: translateX(-57px);
+      }
+      .menu--nom h4,
+      p {
+        padding-right: 25px;
       }
     }
   }

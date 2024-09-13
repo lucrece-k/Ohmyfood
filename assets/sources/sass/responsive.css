@@ -1,3 +1,12 @@
+/*****************media query tablette************************************/
+@media (min-width: 768px) {
+  .fonctionnement {
+    padding: 48px 50px 68px 50px;
+  }
+  .restaurant-accueil {
+    padding: 54px 50px;
+  }
+}
 /*****************media query ordinateur************************************/
 @media (min-width: 1024px) {
   .logo-header {
@@ -7,8 +16,12 @@
   .logo-header .header {
     padding: 30px 0 32px 17px;
   }
+  .logo-header .header a {
+    font-size: 21px;
+    bottom: 34px;
+  }
   .logo-header .photo-restaurant img {
-    height: 434px;
+    height: 350px;
   }
   .localisation {
     box-shadow: none;
@@ -31,14 +44,14 @@
     padding: 0 0 9px 0;
   }
   .fonctionnement {
-    padding: 50px 180px;
+    padding: 50px 45px;
     gap: 28px;
   }
   .fonctionnement__content {
     display: flex;
     flex-direction: row;
     gap: 36.5px;
-    padding: 0 20px 0 7px;
+    padding: 0 20px 0 10px;
   }
   .fonctionnement__choix {
     width: 322px;
@@ -48,7 +61,7 @@
   }
   .restaurant-accueil {
     gap: 28px;
-    padding: 30px 180px;
+    padding: 30px 45px;
   }
   .restaurant-accueil h2 {
     padding-left: 0;
@@ -56,7 +69,7 @@
   .restaurant-accueil__content {
     display: grid;
     grid-template-rows: 251px 251px;
-    grid-template-columns: 45% 45%;
+    grid-template-columns: 44.5% 44.5%;
     gap: 50px 100px;
   }
   .restaurant-accueil__content--card {
@@ -71,6 +84,7 @@
     width: 71%;
     margin-left: 14.5%;
     margin-right: 14.5%;
+    padding: 0;
   }
   .container .nom-restaurants {
     justify-content: center;
@@ -78,28 +92,25 @@
   }
   .container .nom-restaurants .coeur i {
     font-size: 24px;
-    right: 305px;
+    right: -24px;
   }
   .container .nom-restaurants .coeur .coeur-1-ldds {
-    font-size: 24px;
-    right: 310px;
+    right: -24px;
   }
   .container .nom-restaurants .coeur .coeur-1-lne {
-    font-size: 24px;
-    right: 302px;
+    right: -24px;
   }
   .container .nom-restaurants .coeur .coeur-1-alf {
-    font-size: 24px;
-    right: 335px;
+    right: -24px;
   }
   .container .coeur-2 {
-    left: 32px;
+    left: 2px;
   }
   h3 {
-    margin-left: 210px;
+    margin-left: 139px;
   }
   .menu {
-    padding: 0 210px;
+    padding: 0 139px;
     width: 100%;
   }
   .button-commander {
@@ -113,7 +124,7 @@
     gap: 67px;
   }
   .footer h2 {
-    margin: 0 44px 0 23px;
+    margin-left: 23px;
   }
   .footer__contenu {
     display: flex;

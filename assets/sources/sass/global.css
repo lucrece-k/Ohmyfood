@@ -49,9 +49,8 @@ button:hover {
 }
 
 .coeur i {
-  position: absolute;
-  right: 25px;
-  bottom: 33px;
+  position: relative;
+  right: 9px;
   font-size: 24px;
 }
 .coeur .coeur-2 {
@@ -69,7 +68,7 @@ button:hover {
   color: transparent;
   transform: translateY(-9px) scale(2.2);
   transform-origin: bottom;
-  transition: all 600ms ease-in-out;
+  transition: transform 600ms ease-in-out;
 }
 
 .footer {

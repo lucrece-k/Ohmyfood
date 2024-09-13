@@ -3,8 +3,7 @@
 
 /*creation du loader*/
 .loader {
-  background-color: rgb(249, 241, 249);
-  opacity: 0.9;
+  background-color: gainsboro;
   height: 100vh;
   position: fixed;
   top: 0;
@@ -14,6 +13,14 @@
   z-index: 1;
   animation: disapper 200ms 3s forwards;
   transform-origin: top;
+  .logo-loader {
+    font-size: large;
+    font-family: $ff-shrikhand;
+    position: absolute;
+    z-index: 2;
+    top: 48%;
+    left: 35%;
+  }
 
   &__animation {
     border-top: 10px solid $purple-primaire;
@@ -56,7 +63,7 @@
 .localisation {
   background-color: $couleur-localisation;
   box-shadow: $box-shadow;
-  width: $width;
+  width: $width-100;
   height: 50px;
 
   &__content {
@@ -139,7 +146,7 @@
     background-color: $background-restaurants;
     border-radius: 20px;
     box-shadow: $box-shadow;
-    width: $width;
+    width: $width-100;
     height: 72px;
     cursor: pointer;
 
@@ -192,7 +199,7 @@
   background-color: $background-restaurants;
   padding: 54px 18px 66px 17px;
   gap: 20px;
-  width: $width;
+  width: $width-100;
   & h2 {
     padding-left: 3px;
   }
@@ -202,11 +209,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: $width;
+    width: $width-100;
     gap: 18px;
 
     & a {
-      width: $width;
+      width: $width-100;
     }
     & .content__titre {
       display: flex;
@@ -225,16 +232,16 @@
     border: none;
     background-color: white;
     border-radius: 15px;
-    width: $width;
+    width: $width-100;
     height: 276px;
     position: relative;
     & .content {
-      width: $width;
+      width: $width-100;
     }
   }
 
   &__content--card img {
-    width: $width;
+    width: $width-100;
     height: 200px;
     border-radius: 15px 15px 0 0;
     object-fit: cover;
@@ -267,7 +274,7 @@
     font-weight: $font-weight-500;
   }
   .coeur-2 {
-    top: 7px;
+    top: 12px;
     left: -31px;
   }
 }
