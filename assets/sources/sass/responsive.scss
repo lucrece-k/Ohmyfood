@@ -22,11 +22,17 @@
     box-shadow: none;
     .header {
       padding: 30px 0 32px 17px;
+      a {
+        font-size: 21px;
+
+        bottom: 34px;
+      }
     }
     .photo-restaurant img {
       height: 434px;
     }
   }
+
   .localisation {
     box-shadow: none;
     &__content {

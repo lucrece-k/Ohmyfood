@@ -68,7 +68,7 @@ button:hover {
   color: transparent;
   transform: translateY(-9px) scale(2.2);
   transform-origin: bottom;
-  transition: all 600ms ease-in-out;
+  transition: transform 600ms ease-in-out;
 }
 
 .footer {
@@ -130,10 +130,11 @@ button:hover {
   padding: 21px 0 13px 17px;
 }
 .logo-header .header a {
-  font-size: 30px;
+  font-size: 23px;
   color: #353535;
   position: absolute;
   left: 20px;
+  bottom: 21px;
 }
 .logo-header .header img {
   padding: 0;
@@ -319,6 +320,10 @@ footer {
   }
   .logo-header .header {
     padding: 30px 0 32px 17px;
+  }
+  .logo-header .header a {
+    font-size: 21px;
+    bottom: 34px;
   }
   .logo-header .photo-restaurant img {
     height: 434px;

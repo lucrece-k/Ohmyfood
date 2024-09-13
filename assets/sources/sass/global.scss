@@ -73,7 +73,7 @@ button {
     color: transparent;
     transform: translateY(-9px) scale(2.2);
     transform-origin: bottom;
-    transition: all 600ms ease-in-out;
+    transition: transform 600ms ease-in-out;
   }
 }
 
