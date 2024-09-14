@@ -8,6 +8,9 @@
   .restaurant-accueil {
     padding: 54px 50px;
   }
+  .ctn-menu {
+    padding: 0 50px 0 50px;
+  }
 }
 
 /*****************media query ordinateur************************************/
@@ -99,7 +102,9 @@
     margin-left: 14.5%;
     margin-right: 14.5%;
     padding: 0;
-
+    .ctn-menu {
+      padding: 0;
+    }
     & .nom-restaurants {
       justify-content: center;
       padding-top: 51px;
@@ -108,13 +113,7 @@
         font-size: 24px;
         right: -24px;
       }
-      & .coeur .coeur-1-ldds {
-        right: -24px;
-      }
-      & .coeur .coeur-1-lne {
-        right: -24px;
-      }
-      & .coeur .coeur-1-alf {
+      & .coeur .coeur-1 {
         right: -24px;
       }
     }

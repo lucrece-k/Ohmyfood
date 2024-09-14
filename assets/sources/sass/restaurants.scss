@@ -59,16 +59,11 @@
     align-items: center;
     padding: 32px 17px 0 17px;
     position: relative;
-    h1 {
-      width: 80%;
-      text-overflow: ellipsis;
-      overflow: hidden;
-      text-wrap: nowrap;
-    }
 
     .coeur-1,
     .coeur-2 {
       bottom: 10px;
+      right: 45px;
     }
 
     .coeur i {
@@ -79,10 +74,6 @@
     .coeur .coeur-2 {
       font-size: 12px;
       right: 60px;
-    }
-    .coeur .coeur-2-ldds,
-    .coeur-1-ldds {
-      right: 45px;
     }
   }
 }
@@ -131,7 +122,6 @@ h3 {
       text-wrap: nowrap;
       text-overflow: ellipsis;
       display: block;
-
       overflow: hidden;
     }
 

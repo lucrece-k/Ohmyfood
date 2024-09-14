@@ -14,12 +14,13 @@
   animation: disapper 200ms 3s forwards;
   transform-origin: top;
   .logo-loader {
-    font-size: large;
+    object-fit: contain;
     font-family: $ff-shrikhand;
     position: absolute;
-    z-index: 2;
-    top: 48%;
-    left: 35%;
+    top: 27%;
+    left: 33%;
+    width: 40%;
+    margin: auto;
   }
 
   &__animation {
@@ -38,6 +39,7 @@
     right: 0;
     top: 0;
     bottom: 0;
+    z-index: 2;
   }
 }
 
@@ -152,7 +154,7 @@
 
     &:hover {
       filter: $brightness;
-      box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.7);
+      box-shadow: $box-shadow-hover;
     }
   }
 
