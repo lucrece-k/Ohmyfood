@@ -108,17 +108,9 @@
     & .nom-restaurants {
       justify-content: center;
       padding-top: 51px;
-
-      & .coeur i {
-        font-size: 24px;
-        right: -24px;
+      .coeur {
+        right: -23px;
       }
-      & .coeur .coeur-1 {
-        right: -24px;
-      }
-    }
-    .coeur-2 {
-      left: 2px;
     }
   }
 

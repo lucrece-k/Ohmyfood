@@ -60,21 +60,17 @@
     padding: 32px 17px 0 17px;
     position: relative;
 
-    .coeur-1,
-    .coeur-2 {
-      bottom: 10px;
-      right: 45px;
+    .coeur {
+      right: 4px;
+      bottom: 2px;
+      .coeur-2 {
+        bottom: -3px;
+      }
     }
-
-    .coeur i {
-      right: 14px;
-      bottom: 0px;
-      font-size: 24px;
-    }
-    .coeur .coeur-2 {
-      font-size: 12px;
-      right: 60px;
-    }
+  }
+  .menu-prix {
+    font-size: 15px;
+    font-weight: 700;
   }
 }
 

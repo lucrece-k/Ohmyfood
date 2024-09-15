@@ -6,6 +6,9 @@
   .restaurant-accueil {
     padding: 54px 50px;
   }
+  .ctn-menu {
+    padding: 0 50px 0 50px;
+  }
 }
 /*****************media query ordinateur************************************/
 @media (min-width: 1024px) {
@@ -86,25 +89,15 @@
     margin-right: 14.5%;
     padding: 0;
   }
+  .container .ctn-menu {
+    padding: 0;
+  }
   .container .nom-restaurants {
     justify-content: center;
     padding-top: 51px;
   }
-  .container .nom-restaurants .coeur i {
-    font-size: 24px;
-    right: -24px;
-  }
-  .container .nom-restaurants .coeur .coeur-1-ldds {
-    right: -24px;
-  }
-  .container .nom-restaurants .coeur .coeur-1-lne {
-    right: -24px;
-  }
-  .container .nom-restaurants .coeur .coeur-1-alf {
-    right: -24px;
-  }
-  .container .coeur-2 {
-    left: 2px;
+  .container .nom-restaurants .coeur {
+    right: -23px;
   }
   h3 {
     margin-left: 139px;
