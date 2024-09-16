@@ -468,10 +468,6 @@ button:hover {
   .container .nom-restaurants .coeur {
     right: -23px;
   }
-  .container .nom-restaurants .coeur .coeur-2 {
-    position: relative;
-    bottom: -9px;
-  }
   h3 {
     margin-left: 139px;
   }
