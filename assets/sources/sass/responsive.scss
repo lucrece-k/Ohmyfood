@@ -8,6 +8,11 @@
   .restaurant-accueil {
     padding: 54px 50px;
   }
+  .container {
+    .nom-restaurants {
+      justify-content: space-between;
+    }
+  }
   .ctn-menu {
     padding: 0 50px 0 50px;
   }
@@ -34,9 +39,7 @@
 
   .localisation {
     box-shadow: none;
-    &__content {
-      height: 100%;
-    }
+    padding: 6px;
   }
   .presentation {
     gap: 21px;
@@ -66,7 +69,13 @@
     }
 
     &__choix {
-      width: 322px;
+      padding: 24px 0;
+      span {
+        right: 12px;
+      }
+      p {
+        margin-left: 15px;
+      }
     }
 
     &__titre {
@@ -87,9 +96,7 @@
       grid-template-columns: 44.5% 44.5%;
       gap: 50px 100px;
     }
-    &__content--card {
-      height: 250px;
-    }
+
     &__content--card img {
       height: 174px;
     }
@@ -108,8 +115,10 @@
     .nom-restaurants {
       justify-content: center;
       padding-top: 51px;
-      .coeur {
-        right: -23px;
+      gap: 0;
+      .coeur-1,
+      .coeur-2 {
+        right: 32px;
       }
     }
   }

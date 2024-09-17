@@ -54,19 +54,15 @@
   .nom-restaurants {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     padding: 32px 17px 0 17px;
     position: relative;
-    gap: 20px;
 
     div.coeur {
-      right: initial;
       bottom: initial;
-
+      right: -58px;
       .coeur-1,
       .coeur-2 {
-        right: initial;
         bottom: initial;
         position: relative;
       }
@@ -130,8 +126,7 @@ h3 {
     }
 
     .check {
-      width: 57px;
-      height: 100%;
+      padding: 25px 18px;
       background-color: $green-background;
       color: $white;
       display: flex;
@@ -233,6 +228,9 @@ h3 {
   justify-content: center;
   align-items: center;
   margin-bottom: 40px;
+}
+.button-commander button {
+  padding: 15px 49px;
 }
 
 footer {

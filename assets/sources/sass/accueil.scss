@@ -66,8 +66,7 @@
 .localisation {
   background-color: $couleur-localisation;
   box-shadow: $box-shadow;
-  width: $width-100;
-  height: 50px;
+  padding: 15px 22px;
 
   &__content {
     display: flex;
@@ -75,7 +74,6 @@
     justify-content: center;
     align-items: center;
     gap: 17px;
-    padding: 10px;
   }
 
   span {
@@ -142,20 +140,18 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    gap: 12px;
     font-size: 16px;
     font-weight: $font-weight-500;
-    border: none;
     background-color: $background-restaurants;
     border-radius: 20px;
     box-shadow: $box-shadow;
-    width: $width-100;
-    height: 72px;
+    padding: 23px 12px;
     cursor: pointer;
+    width: $width-100;
   }
 
   &__choix p {
-    margin-left: 10px;
+    margin-left: 26px;
     font-size: 16px;
   }
 
@@ -164,13 +160,12 @@
     text-align: center;
     background-color: $purple-primaire;
     width: 24px;
-    height: 24px;
     border-radius: 24px;
     padding: 3px;
     color: $white;
     font-size: 14px;
     position: relative;
-    right: 10px;
+    right: 23px;
   }
 
   .fa-mobile-screen-button,
@@ -234,13 +229,7 @@
     border: none;
     background-color: white;
     border-radius: 15px;
-    width: $width-100;
-    height: 276px;
     position: relative;
-
-    .content {
-      width: $width-100;
-    }
   }
 
   &__content--card img {
@@ -252,12 +241,11 @@
 
   &__content--card .content {
     font-size: 17px;
-    height: 77px;
+    padding: 15px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-left: 13px;
   }
 
   .nouveau::before {
