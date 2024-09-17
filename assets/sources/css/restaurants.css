@@ -164,13 +164,13 @@ button:hover {
 .container .nom-restaurants {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   padding: 32px 17px 0 17px;
   position: relative;
 }
 .container .nom-restaurants div.coeur {
   bottom: initial;
-  right: -58px;
 }
 .container .nom-restaurants div.coeur .coeur-1,
 .container .nom-restaurants div.coeur .coeur-2 {
@@ -334,9 +334,6 @@ footer {
   .restaurant-accueil {
     padding: 54px 50px;
   }
-  .container .nom-restaurants {
-    justify-content: space-between;
-  }
   .ctn-menu {
     padding: 0 50px 0 50px;
   }
@@ -431,7 +428,7 @@ footer {
   }
   .container .nom-restaurants .coeur-1,
   .container .nom-restaurants .coeur-2 {
-    right: 32px;
+    right: -9px;
   }
   h3 {
     margin-left: 139px;

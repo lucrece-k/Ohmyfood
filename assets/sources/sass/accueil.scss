@@ -15,8 +15,7 @@
   transform-origin: top;
 
   .logo-loader {
-    object-fit: contain;
-    font-family: $ff-shrikhand;
+    object-fit: cover;
     position: absolute;
     top: 27%;
     left: 33%;

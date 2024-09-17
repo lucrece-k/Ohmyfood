@@ -128,8 +128,7 @@ button:hover {
   transform-origin: top;
 }
 .loader .logo-loader {
-  object-fit: contain;
-  font-family: "Shrikhand";
+  object-fit: cover;
   position: absolute;
   top: 27%;
   left: 33%;

@@ -54,13 +54,14 @@
   .nom-restaurants {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     padding: 32px 17px 0 17px;
     position: relative;
 
     div.coeur {
       bottom: initial;
-      right: -58px;
+      // right: -2.4em;
       .coeur-1,
       .coeur-2 {
         bottom: initial;

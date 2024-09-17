@@ -8,11 +8,7 @@
   .restaurant-accueil {
     padding: 54px 50px;
   }
-  .container {
-    .nom-restaurants {
-      justify-content: space-between;
-    }
-  }
+
   .ctn-menu {
     padding: 0 50px 0 50px;
   }
@@ -118,7 +114,7 @@
       gap: 0;
       .coeur-1,
       .coeur-2 {
-        right: 32px;
+        right: -9px;
       }
     }
   }
