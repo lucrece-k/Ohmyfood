@@ -42,7 +42,7 @@
     gap: 21px;
     margin-top: 0;
 
-    & br {
+    br {
       display: none;
     }
     &__titre {
@@ -105,7 +105,7 @@
     .ctn-menu {
       padding: 0;
     }
-    & .nom-restaurants {
+    .nom-restaurants {
       justify-content: center;
       padding-top: 51px;
       .coeur {
@@ -134,7 +134,7 @@
     padding: 30px 25px;
     gap: 67px;
 
-    & h2 {
+    h2 {
       margin-left: 23px;
     }
 
@@ -142,10 +142,10 @@
       display: flex;
       flex-direction: row;
 
-      & .mention-legale {
+      .mention-legale {
         margin-left: 36px;
       }
-      & a {
+      a {
         margin-left: 9px;
       }
 

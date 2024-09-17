@@ -13,7 +13,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-left: 17px;
     position: relative;
     padding: 21px 0 13px 17px;
 
@@ -59,15 +58,21 @@
     align-items: center;
     padding: 32px 17px 0 17px;
     position: relative;
+    gap: 20px;
 
-    .coeur {
-      right: 4px;
-      bottom: 2px;
+    div.coeur {
+      right: initial;
+      bottom: initial;
+
+      .coeur-1,
       .coeur-2 {
-        bottom: -3px;
+        right: initial;
+        bottom: initial;
+        position: relative;
       }
     }
   }
+
   .menu-prix {
     font-size: 15px;
     font-weight: 700;
@@ -94,6 +99,7 @@ h3 {
     }
   }
 }
+
 .menu {
   display: flex;
   flex-direction: column;
@@ -110,9 +116,11 @@ h3 {
     overflow: hidden;
     box-shadow: $box-shadow-restaurant;
     border-radius: 15px;
+
     .menu--nom {
       width: 75%;
     }
+
     .menu--nom h4,
     p {
       text-wrap: nowrap;
@@ -134,11 +142,13 @@ h3 {
       right: -57px;
       opacity: 1;
       transition: 0.1s ease-in-out;
+
       i {
         border-radius: 24px;
         background-color: $white;
         padding: 2px;
       }
+
       .fa-check {
         color: $green-background;
       }
@@ -152,6 +162,7 @@ h3 {
       .menu-prix {
         transform: translateX(-57px);
       }
+
       .menu--nom h4,
       p {
         padding-right: 25px;
@@ -227,4 +238,5 @@ h3 {
 footer {
   margin-top: 0;
 }
+
 @import 'responsive';
