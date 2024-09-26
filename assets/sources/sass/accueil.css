@@ -22,11 +22,11 @@ button {
   color: white;
   background: linear-gradient(0deg, #9356dc, #ff79da);
   border-radius: 30px;
-  width: 218px;
-  height: 50px;
+  padding: 15px 22px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  font-size: 18px;
+  font-size: 16px;
   cursor: pointer;
+  transition: 1s ease-in-out;
 }
 button:hover {
   filter: brightness(1.1);
@@ -35,7 +35,7 @@ button:hover {
 
 .logo-header {
   text-align: center;
-  padding: 14px 89px 13px 89px;
+  padding: 14px 89px;
   margin-bottom: 10px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   display: flex;
@@ -50,27 +50,22 @@ button:hover {
 
 .coeur {
   position: relative;
-  right: 6px;
-  bottom: 6px;
+  right: -15px;
   font-size: 24px;
 }
-
+.coeur .coeur-2,
+.coeur .coeur-1 {
+  position: absolute;
+  right: 23px;
+  bottom: -7px;
+  cursor: pointer;
+}
 .coeur .coeur-2 {
   opacity: 0;
-  position: relative;
-  font-size: 12px;
-  right: 23px;
-  bottom: -3px;
+  transition: all 1s ease-in-out;
 }
 .coeur:hover .coeur-2 {
-  background-image: linear-gradient(0deg, #ff79da, #9356dc);
-  -webkit-background-clip: text;
-          background-clip: text;
   opacity: 1;
-  color: transparent;
-  transform: scale(2.2);
-  transform-origin: bottom;
-  transition: transform 600ms ease-in-out;
 }
 
 .footer {
@@ -129,9 +124,8 @@ button:hover {
   transform-origin: top;
 }
 .loader .logo-loader {
-  -o-object-fit: contain;
-     object-fit: contain;
-  font-family: "Shrikhand";
+  -o-object-fit: cover;
+     object-fit: cover;
   position: absolute;
   top: 27%;
   left: 33%;
@@ -177,8 +171,7 @@ button:hover {
 .localisation {
   background-color: #eaeaea;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  width: 100%;
-  height: 50px;
+  padding: 15px 22px;
 }
 .localisation__content {
   display: flex;
@@ -186,7 +179,6 @@ button:hover {
   justify-content: center;
   align-items: center;
   gap: 17px;
-  padding: 10px;
 }
 .localisation span {
   color: #353535;
@@ -246,23 +238,17 @@ button:hover {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  gap: 12px;
   font-size: 16px;
   font-weight: 500;
-  border: none;
   background-color: #f6f6f6;
   border-radius: 20px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  width: 100%;
-  height: 72px;
+  padding: 23px 12px;
   cursor: pointer;
-}
-.fonctionnement__choix:hover {
-  filter: brightness(1.1);
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.7);
+  width: 100%;
 }
 .fonctionnement__choix p {
-  margin-left: 10px;
+  margin-left: 26px;
   font-size: 16px;
 }
 .fonctionnement span {
@@ -270,13 +256,12 @@ button:hover {
   text-align: center;
   background-color: #9356dc;
   width: 24px;
-  height: 24px;
   border-radius: 24px;
   padding: 3px;
-  color: white;
+  color: #ffffff;
   font-size: 14px;
   position: relative;
-  right: 10px;
+  right: 23px;
 }
 .fonctionnement .fa-mobile-screen-button,
 .fonctionnement .fa-list-ul {
@@ -331,12 +316,7 @@ button:hover {
   border: none;
   background-color: white;
   border-radius: 15px;
-  width: 100%;
-  height: 276px;
   position: relative;
-}
-.restaurant-accueil__content--card .content {
-  width: 100%;
 }
 .restaurant-accueil__content--card img {
   width: 100%;
@@ -347,12 +327,11 @@ button:hover {
 }
 .restaurant-accueil__content--card .content {
   font-size: 17px;
-  height: 77px;
+  padding: 15px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-left: 13px;
 }
 .restaurant-accueil .nouveau::before {
   display: flex;
@@ -401,9 +380,7 @@ button:hover {
   }
   .localisation {
     box-shadow: none;
-  }
-  .localisation__content {
-    height: 100%;
+    padding: 6px;
   }
   .presentation {
     gap: 21px;
@@ -430,7 +407,13 @@ button:hover {
     padding: 0 20px 0 10px;
   }
   .fonctionnement__choix {
-    width: 322px;
+    padding: 24px 0;
+  }
+  .fonctionnement__choix span {
+    right: 12px;
+  }
+  .fonctionnement__choix p {
+    margin-left: 15px;
   }
   .fonctionnement__titre {
     padding-left: 0;
@@ -447,9 +430,6 @@ button:hover {
     grid-template-rows: 251px 251px;
     grid-template-columns: 44.5% 44.5%;
     gap: 50px 100px;
-  }
-  .restaurant-accueil__content--card {
-    height: 250px;
   }
   .restaurant-accueil__content--card img {
     height: 174px;
@@ -468,9 +448,11 @@ button:hover {
   .container .nom-restaurants {
     justify-content: center;
     padding-top: 51px;
+    gap: 0;
   }
-  .container .nom-restaurants .coeur {
-    right: -23px;
+  .container .nom-restaurants .coeur-1,
+  .container .nom-restaurants .coeur-2 {
+    right: -30px;
   }
   h3 {
     margin-left: 139px;

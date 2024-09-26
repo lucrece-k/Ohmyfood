@@ -27,7 +27,7 @@ button {
   box-shadow: $box-shadow;
   font-size: 16px;
   cursor: pointer;
-  transition: 0.3s all;
+  transition: 1s ease-in-out;
 
   &:hover {
     filter: $brightness;
@@ -64,18 +64,13 @@ button {
   }
 
   .coeur-2 {
-    display: none;
-    background-image: $coeurLinearGradient;
-    background-clip: text;
-    color: transparent;
+    opacity: 0;
+    transition: all 1s ease-in-out;
   }
 
   &:hover {
-    .coeur-1 {
-      display: none;
-    }
     .coeur-2 {
-      display: block;
+      opacity: 1;
     }
   }
 }

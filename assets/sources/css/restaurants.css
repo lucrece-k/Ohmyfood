@@ -27,7 +27,7 @@ button {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   font-size: 16px;
   cursor: pointer;
-  transition: 0.3s all;
+  transition: 1s ease-in-out;
 }
 button:hover {
   filter: brightness(1.1);
@@ -61,16 +61,11 @@ button:hover {
   cursor: pointer;
 }
 .coeur .coeur-2 {
-  display: none;
-  background-image: linear-gradient(0deg, #ff79da, #9356dc);
-  background-clip: text;
-  color: transparent;
-}
-.coeur:hover .coeur-1 {
-  display: none;
+  opacity: 0;
+  transition: all 1s ease-in-out;
 }
 .coeur:hover .coeur-2 {
-  display: block;
+  opacity: 1;
 }
 
 .footer {
@@ -169,14 +164,6 @@ button:hover {
   padding: 32px 17px 0 17px;
   position: relative;
 }
-.container .nom-restaurants div.coeur {
-  bottom: initial;
-}
-.container .nom-restaurants div.coeur .coeur-1,
-.container .nom-restaurants div.coeur .coeur-2 {
-  bottom: initial;
-  position: relative;
-}
 .container .menu-prix {
   font-size: 15px;
   font-weight: 700;
@@ -238,7 +225,7 @@ h3 {
   position: absolute;
   right: -57px;
   opacity: 1;
-  transition: 0.1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 .menu-et-check .check i {
   border-radius: 24px;
@@ -283,22 +270,22 @@ h3 {
   justify-content: flex-end;
   align-items: flex-end;
   gap: 10px;
-  transition: 0.1s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 .entrées {
   animation: appear 1s forwards ease-in-out;
-  transform: translate(0, 0) 3s;
+  transform: translate(0, 0);
 }
 
 .plats {
   animation: appear 3s forwards ease-in-out;
-  transform: translate(0, 0) 5s;
+  transform: translate(0, 0);
 }
 
 .desserts {
   animation: appear 5s forwards ease-in-out;
-  transform: translate(0, 0) 7s;
+  transform: translate(0, 0);
 }
 
 @keyframes appear {
@@ -428,7 +415,7 @@ footer {
   }
   .container .nom-restaurants .coeur-1,
   .container .nom-restaurants .coeur-2 {
-    right: -9px;
+    right: -30px;
   }
   h3 {
     margin-left: 139px;

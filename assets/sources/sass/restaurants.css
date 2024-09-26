@@ -23,11 +23,11 @@ button {
   color: white;
   background: linear-gradient(0deg, #9356dc, #ff79da);
   border-radius: 30px;
-  width: 218px;
-  height: 50px;
+  padding: 15px 22px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  font-size: 18px;
+  font-size: 16px;
   cursor: pointer;
+  transition: 0.3s all;
 }
 button:hover {
   filter: brightness(1.1);
@@ -36,7 +36,7 @@ button:hover {
 
 .logo-header {
   text-align: center;
-  padding: 14px 89px 13px 89px;
+  padding: 14px 89px;
   margin-bottom: 10px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   display: flex;
@@ -51,27 +51,25 @@ button:hover {
 
 .coeur {
   position: relative;
-  right: 6px;
-  bottom: 6px;
+  right: -15px;
   font-size: 24px;
 }
-
+.coeur .coeur-2,
+.coeur .coeur-1 {
+  position: absolute;
+  right: 23px;
+  bottom: -7px;
+  cursor: pointer;
+}
 .coeur .coeur-2 {
   opacity: 0;
-  position: relative;
-  font-size: 12px;
-  right: 23px;
-  bottom: -3px;
+  transform: scale(1);
+  transition: all 600ms ease-in-out;
 }
 .coeur:hover .coeur-2 {
-  background-image: linear-gradient(0deg, #ff79da, #9356dc);
-  -webkit-background-clip: text;
-          background-clip: text;
   opacity: 1;
-  color: transparent;
-  transform: scale(2.2);
+  transform: scale(1.1);
   transform-origin: bottom;
-  transition: transform 600ms ease-in-out;
 }
 
 .footer {
@@ -128,7 +126,6 @@ button:hover {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding-left: 17px;
   position: relative;
   padding: 21px 0 13px 17px;
 }
@@ -172,13 +169,6 @@ button:hover {
   align-items: center;
   padding: 32px 17px 0 17px;
   position: relative;
-}
-.container .nom-restaurants .coeur {
-  right: 4px;
-  bottom: 2px;
-}
-.container .nom-restaurants .coeur .coeur-2 {
-  bottom: -3px;
 }
 .container .menu-prix {
   font-size: 15px;
@@ -231,8 +221,7 @@ h3 {
   overflow: hidden;
 }
 .menu-et-check .check {
-  width: 57px;
-  height: 100%;
+  padding: 25px 18px;
   background-color: #99e2d0;
   color: #ffffff;
   display: flex;
@@ -242,7 +231,7 @@ h3 {
   position: absolute;
   right: -57px;
   opacity: 1;
-  transition: 0.1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 .menu-et-check .check i {
   border-radius: 24px;
@@ -287,22 +276,22 @@ h3 {
   justify-content: flex-end;
   align-items: flex-end;
   gap: 10px;
-  transition: 0.1s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 .entrées {
   animation: appear 1s forwards ease-in-out;
-  transform: translate(0, 0) 3s;
+  transform: translate(0, 0);
 }
 
 .plats {
   animation: appear 3s forwards ease-in-out;
-  transform: translate(0, 0) 5s;
+  transform: translate(0, 0);
 }
 
 .desserts {
   animation: appear 5s forwards ease-in-out;
-  transform: translate(0, 0) 7s;
+  transform: translate(0, 0);
 }
 
 @keyframes appear {
@@ -320,6 +309,10 @@ h3 {
   justify-content: center;
   align-items: center;
   margin-bottom: 40px;
+}
+
+.button-commander button {
+  padding: 15px 49px;
 }
 
 footer {
@@ -356,9 +349,7 @@ footer {
   }
   .localisation {
     box-shadow: none;
-  }
-  .localisation__content {
-    height: 100%;
+    padding: 6px;
   }
   .presentation {
     gap: 21px;
@@ -385,7 +376,13 @@ footer {
     padding: 0 20px 0 10px;
   }
   .fonctionnement__choix {
-    width: 322px;
+    padding: 24px 0;
+  }
+  .fonctionnement__choix span {
+    right: 12px;
+  }
+  .fonctionnement__choix p {
+    margin-left: 15px;
   }
   .fonctionnement__titre {
     padding-left: 0;
@@ -402,9 +399,6 @@ footer {
     grid-template-rows: 251px 251px;
     grid-template-columns: 44.5% 44.5%;
     gap: 50px 100px;
-  }
-  .restaurant-accueil__content--card {
-    height: 250px;
   }
   .restaurant-accueil__content--card img {
     height: 174px;
@@ -423,9 +417,11 @@ footer {
   .container .nom-restaurants {
     justify-content: center;
     padding-top: 51px;
+    gap: 0;
   }
-  .container .nom-restaurants .coeur {
-    right: -23px;
+  .container .nom-restaurants .coeur-1,
+  .container .nom-restaurants .coeur-2 {
+    right: -30px;
   }
   h3 {
     margin-left: 139px;

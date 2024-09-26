@@ -58,16 +58,6 @@
     align-items: center;
     padding: 32px 17px 0 17px;
     position: relative;
-
-    div.coeur {
-      bottom: initial;
-      // right: -2.4em;
-      .coeur-1,
-      .coeur-2 {
-        bottom: initial;
-        position: relative;
-      }
-    }
   }
 
   .menu-prix {
@@ -137,7 +127,7 @@ h3 {
       position: absolute;
       right: -57px;
       opacity: 1;
-      transition: 0.1s ease-in-out;
+      transition: all 1s ease-in-out;
 
       i {
         border-radius: 24px;
@@ -194,23 +184,23 @@ h3 {
     justify-content: flex-end;
     align-items: flex-end;
     gap: 10px;
-    transition: 0.1s ease-in-out;
+    transition: 1s ease-in-out;
   }
 }
 
 .entrées {
   animation: appear 1s forwards ease-in-out;
-  transform: translate(0, 0) 3s;
+  transform: translate(0, 0);
 }
 
 .plats {
   animation: appear 3s forwards ease-in-out;
-  transform: translate(0, 0) 5s;
+  transform: translate(0, 0);
 }
 
 .desserts {
   animation: appear 5s forwards ease-in-out;
-  transform: translate(0, 0) 7s;
+  transform: translate(0, 0);
 }
 
 @keyframes appear {

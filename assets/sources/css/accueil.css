@@ -26,7 +26,7 @@ button {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   font-size: 16px;
   cursor: pointer;
-  transition: 0.3s all;
+  transition: 1s ease-in-out;
 }
 button:hover {
   filter: brightness(1.1);
@@ -60,16 +60,11 @@ button:hover {
   cursor: pointer;
 }
 .coeur .coeur-2 {
-  display: none;
-  background-image: linear-gradient(0deg, #ff79da, #9356dc);
-  background-clip: text;
-  color: transparent;
-}
-.coeur:hover .coeur-1 {
-  display: none;
+  opacity: 0;
+  transition: all 1s ease-in-out;
 }
 .coeur:hover .coeur-2 {
-  display: block;
+  opacity: 1;
 }
 
 .footer {
@@ -360,9 +355,6 @@ button:hover {
   .restaurant-accueil {
     padding: 54px 50px;
   }
-  .container .nom-restaurants {
-    justify-content: space-between;
-  }
   .ctn-menu {
     padding: 0 50px 0 50px;
   }
@@ -457,7 +449,7 @@ button:hover {
   }
   .container .nom-restaurants .coeur-1,
   .container .nom-restaurants .coeur-2 {
-    right: 32px;
+    right: -30px;
   }
   h3 {
     margin-left: 139px;
